@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<!-- 此数据集和用来指定默认的属性列表 -->
+<DocumentElement>
+
+  <Attribute>   
+    <ParentFieldName>-1</ParentFieldName>
+    <AttName>招标信息</AttName>
+    <AttValue></AttValue>
+    <ImageIndex>1</ImageIndex>
+    <remark />
+  </Attribute>
+
+  <Attribute>
+    <ParentFieldName>-1</ParentFieldName>
+    <AttName>基本信息</AttName>
+    <AttValue></AttValue>
+    <ImageIndex>1</ImageIndex>
+    <remark />
+  </Attribute>
+    <Attribute>
+        <ParentFieldName>-1</ParentFieldName>
+        <AttName>其他信息</AttName>
+        <AttValue></AttValue>
+        <ImageIndex>1</ImageIndex>
+        <remark />
+    </Attribute>
+     
+  <Attribute>
+        <ParentFieldName>0</ParentFieldName>
+        <AttName>项目名称</AttName>
+        <AttValue></AttValue>
+        <ImageIndex>1</ImageIndex>
+        <remark />
+  </Attribute>
+
+  <Attribute>
+    <ParentFieldName>0</ParentFieldName>
+    <AttName>项目地址</AttName>
+    <AttValue></AttValue>
+    <ImageIndex>1</ImageIndex>
+    <remark />
+  </Attribute>
+</DocumentElement>

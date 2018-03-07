@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Attribute" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <!--默认属性数据结构 -->
+        <xs:element name="Attribute">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="ParentFieldName" type="xs:int" minOccurs="0" />
+              <xs:element name="AttName" type="xs:string" minOccurs="0" />
+              <xs:element name="AttValue" type="xs:string" minOccurs="0" />
+              <xs:element name="ImageIndex" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- 界面具体功能(导航用) -->
+        <xs:element name="Features">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="ImageMember" type="xs:int" minOccurs="0" />
+              <xs:element name="ValueMember" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" type="xs:string" minOccurs="0" />
+              <xs:element name="CmdName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!--默认功能分类(导航用) -->
+        <xs:element name="Wizard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="KeyFieldName" type="xs:int" minOccurs="0" />
+              <xs:element name="ParentFieldName" type="xs:int" minOccurs="0" />
+              <xs:element name="NodeName" type="xs:string" minOccurs="0" />
+              <xs:element name="remark" type="xs:string" minOccurs="0" />
+              <xs:element name="ImageIndex" type="xs:int" minOccurs="0" />
+              <xs:element name="CommandName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- 用于指定的系统默认 清单库 定额库 图集库 物理文件 选择对照-->
+        <xs:element name="Library">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <!--显示名称-->
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <!--显示关系-->
+              <xs:element name="Relation" type="xs:string" minOccurs="0" />
+              <!--所属分类-->
+              <xs:element name="typeName" type="xs:string" minOccurs="0" />
+              <!--文件名称-->
+              <xs:element name="fileName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- 用于指定的系统默认 专业清单(对照定额库)-->
+        <xs:element name="Professional">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <!--显示名称-->
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <!--所属定额库-->
+              <xs:element name="typeName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- 用于指定的系统默认 专业清单(对照定额库)-->
+        <xs:element name="UnitProject">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <!--单位工程名称-->
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <!--专业默认名称-->
+              <xs:element name="PrjMode" type="xs:string" minOccurs="0" />
+              <!--清单依据-->
+              <xs:element name="ListBased" type="xs:string" minOccurs="0" />
+              <!--定额依据-->
+              <xs:element name="FixedBased" type="xs:string" minOccurs="0" />
+              <!--图集依据-->
+              <xs:element name="AtlasBased" type="xs:string" minOccurs="0" />
+              <!--编号-->
+              <xs:element name="Code" type="xs:string" minOccurs="0" />
+              <!--子目取费、措施项目模板配置(通用专业名称)-->
+              <xs:element name="PrjType" type="xs:string" minOccurs="0" />
+              <!--项目类别-->
+              <xs:element name="ProType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- 功能列表 -->
+        <xs:element name="FunctionList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="ImageMember" type="xs:int" minOccurs="0" />
+              <xs:element name="ValueMember" type="xs:string" minOccurs="0" />
+              <xs:element name="CmdName" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+
+        <!-- 材机分类索引列表 -->
+        <xs:element name="WoodMachineIndex">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="PID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="ImageMember" type="xs:int" minOccurs="0" />
+              <xs:element name="ValueMember" type="xs:string" minOccurs="0" />
+              <xs:element name="CmdName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!--用户价格库分类索引列表-->
+        <xs:element name="UserPrice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="userPriceId" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="userPricePID" type ="xs:int" minOccurs="0"/>
+              <xs:element name="userPriceName" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- 基础构件表 -->
+        <xs:element name="Component">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="ParentID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" type="xs:string" minOccurs="0" />
+              <xs:element name="ImageMember" type="xs:int" minOccurs="0" />
+              <xs:element name="Remark" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+        <!--市场价预算报表列表-->
+        <xs:element name="ReportList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Text" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="Report" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!--清单报表列表-->
+        <xs:element name="QReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Text" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="Report" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+        <!--汇总分析参数对照表(原始参数对照表)-->
+        <xs:element name="Params_Metaanalysis">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="Type"  type="xs:string" minOccurs="0"/>
+              <xs:element name="Remark" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!--费用类别-->
+        <xs:element name="CostType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="Type"  type="xs:string" minOccurs="0"/>
+              <xs:element name="Remark" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <!--其他项目参数选择-->
+        <xs:element name="Params_Other">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="Type"  type="xs:string" minOccurs="0"/>
+              <xs:element name="Remark" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!--配色方案临时配置数据-->
+        <xs:element name="Color_Temp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="PID" type="xs:int" minOccurs="0" />
+              <xs:element name="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="GCL"  type="xs:string" minOccurs="0"/>
+              <xs:element name="DJ" type="xs:string" minOccurs="0" />
+              <xs:element name="HJ" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <!--图元公式配置数据 -->
+        <xs:element name="PrimitiveFormula">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ImageIndex" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="TypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="FileName" type="xs:string" minOccurs="0" />
+              <xs:element name="Formula" type="xs:string" minOccurs="0" />
+              <xs:element name="Parameter" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+		  <xs:element name="ConvertUnit">
+			  <xs:complexType>
+				  <xs:sequence>
+					  <xs:element name="Name" type="xs:string" minOccurs="0" />
+					  <xs:element name="Type" type="xs:string" minOccurs="0" />
+					  <xs:element name="Value" type="xs:decimal" minOccurs="0" />
+				  </xs:sequence>
+			  </xs:complexType>
+		  </xs:element>
+
+
+        <!--当前系统的库文件 清单库 定额库 图库集-->
+        <xs:element name="Libraries">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Rule" type="xs:int" minOccurs="0" />
+              <xs:element name="LibName" type="xs:string" minOccurs="0" />
+              <xs:element name="LibType" type="xs:string" minOccurs="0" />              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+
+        <!--工程信息-->
+        <xs:element name="ProInformationTree">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Pid" type="xs:int" minOccurs="0" />
+              <xs:element name="FormName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

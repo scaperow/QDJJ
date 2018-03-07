@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="业务操作对象">
+    <Position X="3.532" Y="0.5" Height="0.268" Width="1.012" />
+  </Comment>
+  <Comment CommentText="工程">
+    <Position X="0.562" Y="1.427" Height="0.268" Width="1.012" />
+  </Comment>
+  <Comment CommentText="项目">
+    <Position X="3.687" Y="1.479" Height="0.268" Width="1.012" />
+  </Comment>
+  <Class Name="GOLDSOFT.QDJJ.COMMONS.COBJECT">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>COBJECT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GOLDSOFT.QDJJ.COMMONS.CEngineering">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CEngineering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GOLDSOFT.QDJJ.COMMONS.CProjects">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CProjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

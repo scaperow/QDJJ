@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getSuoInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="suoCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSuoInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSuoInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SynchronousData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_DataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="p_CurrNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SynchronousDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SynchronousDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInformationPrice">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetInformationPriceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInformationPriceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInformationPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="p_DateTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInformationPriceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateInformationPriceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SharingWwitch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_CurrNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_Switch" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SharingWwitchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SharingWwitchResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSharingWwitch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_CurrNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSharingWwitchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSharingWwitchResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getSuoInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:getSuoInfo" />
+  </wsdl:message>
+  <wsdl:message name="getSuoInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:getSuoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SynchronousDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SynchronousData" />
+  </wsdl:message>
+  <wsdl:message name="SynchronousDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SynchronousDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInformationPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInformationPrice" />
+  </wsdl:message>
+  <wsdl:message name="GetInformationPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInformationPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInformationPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateInformationPrice" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInformationPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateInformationPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SharingWwitchSoapIn">
+    <wsdl:part name="parameters" element="tns:SharingWwitch" />
+  </wsdl:message>
+  <wsdl:message name="SharingWwitchSoapOut">
+    <wsdl:part name="parameters" element="tns:SharingWwitchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSharingWwitchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSharingWwitch" />
+  </wsdl:message>
+  <wsdl:message name="GetSharingWwitchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSharingWwitchResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebSuoSoap">
+    <wsdl:operation name="getSuoInfo">
+      <wsdl:input message="tns:getSuoInfoSoapIn" />
+      <wsdl:output message="tns:getSuoInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SynchronousData">
+      <wsdl:input message="tns:SynchronousDataSoapIn" />
+      <wsdl:output message="tns:SynchronousDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInformationPrice">
+      <wsdl:input message="tns:GetInformationPriceSoapIn" />
+      <wsdl:output message="tns:GetInformationPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInformationPrice">
+      <wsdl:input message="tns:UpdateInformationPriceSoapIn" />
+      <wsdl:output message="tns:UpdateInformationPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SharingWwitch">
+      <wsdl:input message="tns:SharingWwitchSoapIn" />
+      <wsdl:output message="tns:SharingWwitchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSharingWwitch">
+      <wsdl:input message="tns:GetSharingWwitchSoapIn" />
+      <wsdl:output message="tns:GetSharingWwitchSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebSuoSoap" type="tns:WebSuoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSuoInfo">
+      <soap:operation soapAction="http://tempuri.org/getSuoInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronousData">
+      <soap:operation soapAction="http://tempuri.org/SynchronousData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInformationPrice">
+      <soap:operation soapAction="http://tempuri.org/GetInformationPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInformationPrice">
+      <soap:operation soapAction="http://tempuri.org/UpdateInformationPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SharingWwitch">
+      <soap:operation soapAction="http://tempuri.org/SharingWwitch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSharingWwitch">
+      <soap:operation soapAction="http://tempuri.org/GetSharingWwitch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebSuoSoap12" type="tns:WebSuoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSuoInfo">
+      <soap12:operation soapAction="http://tempuri.org/getSuoInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronousData">
+      <soap12:operation soapAction="http://tempuri.org/SynchronousData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInformationPrice">
+      <soap12:operation soapAction="http://tempuri.org/GetInformationPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInformationPrice">
+      <soap12:operation soapAction="http://tempuri.org/UpdateInformationPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SharingWwitch">
+      <soap12:operation soapAction="http://tempuri.org/SharingWwitch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSharingWwitch">
+      <soap12:operation soapAction="http://tempuri.org/GetSharingWwitch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebSuo">
+    <wsdl:port name="WebSuoSoap" binding="tns:WebSuoSoap">
+      <soap:address location="http://117.34.66.251/WebSuo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebSuoSoap12" binding="tns:WebSuoSoap12">
+      <soap12:address location="http://117.34.66.251/WebSuo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

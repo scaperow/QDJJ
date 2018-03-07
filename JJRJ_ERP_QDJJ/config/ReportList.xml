@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+
+
+	<ReportList>
+		<Text>表一：单位工程造价汇总表</Text>
+		<Value>单位工程造价汇总表</Value>
+		<Report></Report>
+	</ReportList>
+
+	<ReportList>
+		<Text>表一：单位工程造价汇总表(详细)</Text>
+		<Value>单位工程造价汇总表详细</Value>
+		<Report></Report>
+	</ReportList>
+	
+	<ReportList>
+		<Text>表二：分部分项工程量清单计价表</Text>
+		<Value>分部分项工程量清单计价表</Value>
+		<Report></Report>
+	</ReportList>
+	<ReportList>
+		<Text>表三：措施项目清单计价表</Text>
+		<Value>措施项目清单计价表</Value>
+		<Report></Report>
+	</ReportList>
+	
+	<ReportList>
+		<Text>表四：其他项目清单计价表</Text>
+		<Value>其他项目清单计价表</Value>
+		<Report></Report>
+	</ReportList>
+	
+	<ReportList>
+		<Text>表八：工程量清单综合单价分析表</Text>
+		<Value>工程量清单综合单价分析表</Value>
+		<Report></Report>
+	</ReportList>
+	
+	<ReportList>
+		<Text>工程量清单计价表</Text>
+		<Value>工程量清单计价表</Value>
+		<Report></Report>
+	</ReportList>
+
+	<ReportList>
+		<Text>招标最高限价</Text>
+		<Value>招标最高限价</Value>
+		<Report></Report>
+	</ReportList>
+
+	<ReportList>
+		<Text>投标总价</Text>
+		<Value>投标总价</Value>
+		<Report></Report>
+	</ReportList>
+
+
+
+</DocumentElement>

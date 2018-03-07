@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<DocumentElement>
+	<Color_Temp>
+    <PID>-1</PID>
+    <Code></Code>
+    <Name>整个项目</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+
+  <Color_Temp>
+    <PID>0</PID>
+    <Code>0101</Code>
+    <Name>人工土石方</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+
+  <Color_Temp>
+    <PID>1</PID>
+    <Code>0101010001</Code>
+    <Name>平整场地</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+
+  <Color_Temp>
+    <PID>2</PID>
+    <Code>AA000001</Code>
+    <Name>人工挖土</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+
+
+  <Color_Temp>
+    <PID>3</PID>
+    <Code>89001</Code>
+    <Name>人材机</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+  <Color_Temp>
+    <PID>3</PID>
+    <Code>900003</Code>
+    <Name>钢筋</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+  <Color_Temp>
+    <PID>3</PID>
+    <Code>82001</Code>
+    <Name>推土机</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+  <Color_Temp>
+    <PID>3</PID>
+    <Code>01001</Code>
+    <Name>配比人材机</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+  <Color_Temp>
+    <PID>3</PID>
+    <Code>82002</Code>
+    <Name>有差价人材</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+
+  <Color_Temp>
+    <PID>2</PID>
+    <Code>82002</Code>
+    <Name>可计量清单</Name>
+    <Unit></Unit>
+    <GCL>0</GCL>
+    <DJ>0</DJ>
+    <HJ>0</HJ>
+  </Color_Temp>
+  
+</DocumentElement>

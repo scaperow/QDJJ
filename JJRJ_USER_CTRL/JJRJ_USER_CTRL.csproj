@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB5CA939-57D8-48FB-B86D-649473EC0D4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GOLDSOFT.QDJJ.CTRL</RootNamespace>
+    <AssemblyName>GOLDSOFT.QDJJ.CTRL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v9.3.Core, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.Charts.v9.3.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.Data.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.Utils.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\DevExpress.Xpo.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v9.3.UI, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v9.3.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraNavBar.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\DevExpress.XtraReports.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\DevExpress.XtraRichEdit.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v9.3.Core, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <HintPath>bin\Debug\DevExpress.XtraScheduler.v9.3.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraVerticalGrid.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="GOLDSOFT.SERVICES.IServicesObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GOLDSOFT.SERVICES.IServicesObject.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="QD_API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\QD_API.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZiboSoft.Commons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZiboSoft.Commons.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtlasGallery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AtlasGallery.Designer.cs">
+      <DependentUpon>AtlasGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DataErr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataErr.Designer.cs">
+      <DependentUpon>DataErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_LibsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_LibsForm.Designer.cs">
+      <DependentUpon>_LibsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MaterialType.Designer.cs">
+      <DependentUpon>MaterialType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PieChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PieChart.Designer.cs">
+      <DependentUpon>PieChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BandedGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControl.Designer.cs">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlAttributes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlAttributes.Designer.cs">
+      <DependentUpon>CtrlAttributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboxTreelist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComboxTreelist.Designer.cs">
+      <DependentUpon>ComboxTreelist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\XtrRepositoryItemComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CtrlHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlHistory.Designer.cs">
+      <DependentUpon>CtrlHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilesCombox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedLibrary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FixedLibrary.Designer.cs">
+      <DependentUpon>FixedLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedLibraryIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FixedLibraryIndex.Designer.cs">
+      <DependentUpon>FixedLibraryIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunctionList.Designer.cs">
+      <DependentUpon>FunctionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryGridList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GalleryGridList.Designer.cs">
+      <DependentUpon>GalleryGridList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryTreeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GalleryTreeList.Designer.cs">
+      <DependentUpon>GalleryTreeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphAnalysis.Designer.cs">
+      <DependentUpon>GraphAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Information\BasisInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Information\BasisInformation.Designer.cs">
+      <DependentUpon>BasisInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\BiddingInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Information\BiddingInformation.Designer.cs">
+      <DependentUpon>BiddingInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\CtrlBaseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Information\CtrlBaseInfo.Designer.cs">
+      <DependentUpon>CtrlBaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\PublicInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Information\PublicInformation.Designer.cs">
+      <DependentUpon>PublicInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationList.Designer.cs">
+      <DependentUpon>InformationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\TenderInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Information\TenderInformation.Designer.cs">
+      <DependentUpon>TenderInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListGallery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListGallery.Designer.cs">
+      <DependentUpon>ListGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListGalleryIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListGalleryIndex.Designer.cs">
+      <DependentUpon>ListGalleryIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListWoodMachineIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListWoodMachineIndex.Designer.cs">
+      <DependentUpon>ListWoodMachineIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualConversionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManualConversionControl.Designer.cs">
+      <DependentUpon>ManualConversionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetaanalysisList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetaanalysisList.Designer.cs">
+      <DependentUpon>MetaanalysisList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrimitiveFormula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrimitiveFormula.designer.cs">
+      <DependentUpon>PrimitiveFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTrees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProjectTrees.Designer.cs">
+      <DependentUpon>ProjectTrees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Property.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Property.Designer.cs">
+      <DependentUpon>Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibCombox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QuantityUnitTypeTreeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuantityUnitTypeTreeList.Designer.cs">
+      <DependentUpon>QuantityUnitTypeTreeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportControl.Designer.cs">
+      <DependentUpon>ReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubSegmentListData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubSegmentListData.Designer.cs">
+      <DependentUpon>SubSegmentListData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RepositoryItemCalcEditFour.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\RepositoryItemCalcEditTwo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\SpinEditEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\TreeListEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UnitProjectInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitProjectInfo.Designer.cs">
+      <DependentUpon>UnitProjectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitProjectListDataTemp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitProjectListDataTemp.Designer.cs">
+      <DependentUpon>UnitProjectListDataTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariableList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VariableList.Designer.cs">
+      <DependentUpon>VariableList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WoodMachineLibrary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WoodMachineLibrary.Designer.cs">
+      <DependentUpon>WoodMachineLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetaanalysisList2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetaanalysisList2.Designer.cs">
+      <DependentUpon>MetaanalysisList2.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AtlasGallery.resx">
+      <DependentUpon>AtlasGallery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControl.resx">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlAttributes.resx">
+      <DependentUpon>CtrlAttributes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboxTreelist.resx">
+      <DependentUpon>ComboxTreelist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlHistory.resx">
+      <DependentUpon>CtrlHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilesCombox.resx">
+      <DependentUpon>FilesCombox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedLibrary.resx">
+      <DependentUpon>FixedLibrary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedLibraryIndex.resx">
+      <DependentUpon>FixedLibraryIndex.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataErr.resx">
+      <DependentUpon>DataErr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_LibsForm.resx">
+      <DependentUpon>_LibsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionList.resx">
+      <DependentUpon>FunctionList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GalleryGridList.resx">
+      <DependentUpon>GalleryGridList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GalleryTreeList.resx">
+      <DependentUpon>GalleryTreeList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphAnalysis.resx">
+      <DependentUpon>GraphAnalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialType.resx">
+      <DependentUpon>MaterialType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PieChart.resx">
+      <DependentUpon>PieChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Views\GridViewEx.resx">
+      <DependentUpon>GridViewEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationList.resx">
+      <DependentUpon>InformationList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\BasisInformation.resx">
+      <DependentUpon>BasisInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\BiddingInformation.resx">
+      <DependentUpon>BiddingInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\CtrlBaseInfo.resx">
+      <DependentUpon>CtrlBaseInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\PublicInformation.resx">
+      <DependentUpon>PublicInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\TenderInformation.resx">
+      <DependentUpon>TenderInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListGallery.resx">
+      <DependentUpon>ListGallery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListGalleryIndex.resx">
+      <DependentUpon>ListGalleryIndex.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListWoodMachineIndex.resx">
+      <DependentUpon>ListWoodMachineIndex.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualConversionControl.resx">
+      <DependentUpon>ManualConversionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetaanalysisList.resx">
+      <DependentUpon>MetaanalysisList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimitiveFormula.resx">
+      <DependentUpon>PrimitiveFormula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectTrees.resx">
+      <DependentUpon>ProjectTrees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Property.resx">
+      <DependentUpon>Property.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibCombox.resx">
+      <DependentUpon>LibCombox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuantityUnitTypeTreeList.resx">
+      <DependentUpon>QuantityUnitTypeTreeList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportControl.resx">
+      <DependentUpon>ReportControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSegmentListData.resx">
+      <DependentUpon>SubSegmentListData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TreeListEx.resx">
+      <DependentUpon>TreeListEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitProjectInfo.resx">
+      <DependentUpon>UnitProjectInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitProjectListDataTemp.resx">
+      <DependentUpon>UnitProjectListDataTemp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariableList.resx">
+      <DependentUpon>VariableList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WoodMachineLibrary.resx">
+      <DependentUpon>WoodMachineLibrary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetaanalysisList2.resx">
+      <DependentUpon>MetaanalysisList2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Commons\GOLDSOFT.QDJJ.COMMONS.csproj">
+      <Project>{277E16F1-C607-49E4-BE7E-E578669C2DFE}</Project>
+      <Name>GOLDSOFT.QDJJ.COMMONS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GLODSOFT.QDJJ.BUSINESS\GLODSOFT.QDJJ.BUSINESS.csproj">
+      <Project>{C29BBFAD-A884-4711-A652-09B2C9B90CEA}</Project>
+      <Name>GLODSOFT.QDJJ.BUSINESS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\GOLDSOFT.QDJJ.COMMONS._BiddingInfoSource.datasource" />
+    <None Include="Properties\DataSources\GOLDSOFT.QDJJ.COMMONS._TenderInfoSource.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

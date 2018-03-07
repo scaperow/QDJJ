@@ -1,0 +1,3962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FECEEB6D-9E12-44A5-827C-31F81EAD022A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GOLDSOFT.QDJJ.UI</RootNamespace>
+    <AssemblyName>JJRJ_ERP_QDJJ</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>023.ico</ApplicationIcon>
+    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>B7D6DDA4B6A0D54DA7A6CBF1DA49ACD953702559</ManifestCertificateThumbprint>
+    <ManifestKeyFile>JJRJ_ERP_QDJJ_TemporaryKey.pfx</ManifestKeyFile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/JJRJ_ERP_QDJJ/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>qdjj.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.BonusSkins.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v9.3.Core, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v9.3.Design, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v9.3.UI, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v9.3.Core, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v9.3.Core, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GOLDSOFT.SERVICES.IServicesObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\library2008\GOLDSOFT.SERVICES.IServicesObject.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ultimate-analysis-data\src\Reference\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QD_API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL\library2008\QD_API.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZiboSoft.Commons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\APP\DLL\library2008\ZiboSoft.Commons.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABaseForm.Designer.cs">
+      <DependentUpon>ABaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActiveWindow.cs" />
+    <Compile Include="AreaQuantityUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaQuantityUnit.Designer.cs">
+      <DependentUpon>AreaQuantityUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AtlasGalleryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtlasGalleryForm.Designer.cs">
+      <DependentUpon>AtlasGalleryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFroms\Container.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFroms\Container.Designer.cs">
+      <DependentUpon>Container.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFroms\LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFroms\LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFroms\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFroms\MsgBox.Designer.cs">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFroms\ProgressAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFroms\ProgressAction.Designer.cs">
+      <DependentUpon>ProgressAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFroms\ProgressFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFroms\ProgressFrom.Designer.cs">
+      <DependentUpon>ProgressFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFroms\ProjProgressAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFroms\ProjProgressAction.Designer.cs">
+      <DependentUpon>ProjProgressAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFroms\XmlProjProgressAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFroms\XmlProjProgressAction.Designer.cs">
+      <DependentUpon>XmlProjProgressAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseFroms\XmlUnitProjProgressFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFroms\XmlUnitProjProgressFrom.Designer.cs">
+      <DependentUpon>XmlUnitProjProgressFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\CBaseUnitProInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\CBaseUnitProInfo.Designer.cs">
+      <DependentUpon>CBaseUnitProInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\CustomInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\CustomInfoForm.Designer.cs">
+      <DependentUpon>CustomInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\CustomUpdtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\CustomUpdtForm.Designer.cs">
+      <DependentUpon>CustomUpdtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\ContactUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\ContactUsForm.Designer.cs">
+      <DependentUpon>ContactUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\BBMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\BBMessageForm.Designer.cs">
+      <DependentUpon>BBMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchSetForm.Designer.cs">
+      <DependentUpon>BatchSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchsForm.Designer.cs">
+      <DependentUpon>BatchsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BindingBHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindingBHForm.Designer.cs">
+      <DependentUpon>BindingBHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\CActionData.cs" />
+    <Compile Include="Class\CActionFace.cs" />
+    <Compile Include="CActionFunction.cs" />
+    <Compile Include="CBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CBaseForm.Designer.cs">
+      <DependentUpon>CBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInformation\CBasicInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInformation\CBasicInformation.Designer.cs">
+      <DependentUpon>CBasicInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\CFiles.cs" />
+    <Compile Include="CFormColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFormColor.Designer.cs">
+      <DependentUpon>CFormColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHistoryForm.Designer.cs">
+      <DependentUpon>CHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CImportIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CImportIn.Designer.cs">
+      <DependentUpon>CImportIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CImportOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CImportOut.Designer.cs">
+      <DependentUpon>CImportOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CInformationForm.Designer.cs">
+      <DependentUpon>CInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\CPActionData.cs" />
+    <Compile Include="Class\CUActionData.cs" />
+    <Compile Include="Class\SendMailUtil.cs" />
+    <Compile Include="Class\ServiceInstall.cs" />
+    <Compile Include="Class\XmlProjWorker.cs" />
+    <Compile Include="Class\XmlUnitWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CMainEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMetaanalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMetaanalysisForm.Designer.cs">
+      <DependentUpon>CMetaanalysisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\CommonUserControlShow.cs" />
+    <Compile Include="Controls\BindingSourceEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CostSelectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CostSelectControl.Designer.cs">
+      <DependentUpon>CostSelectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GridControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridControlEx.Designer.cs">
+      <DependentUpon>GridControlEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RepositoryItemComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraDockPanelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraTabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraTabPageCostSelectEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraTabPageEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\XtrDockManagerEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConvertJE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertJE.Designer.cs">
+      <DependentUpon>ConvertJE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopyFromQD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyFromQD.Designer.cs">
+      <DependentUpon>CopyFromQD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopyToQD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyToQD.Designer.cs">
+      <DependentUpon>CopyToQD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostSelectForm.Designer.cs">
+      <DependentUpon>CostSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CParameterStatisticsFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CParameterStatisticsFrom.Designer.cs">
+      <DependentUpon>CParameterStatisticsFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CParams_Metaanalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CParams_Metaanalysis.Designer.cs">
+      <DependentUpon>CParams_Metaanalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPwdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPwdForm.Designer.cs">
+      <DependentUpon>CPwdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrentUnit.Designer.cs">
+      <DependentUpon>CurrentUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrWoodMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrWoodMachine.Designer.cs">
+      <DependentUpon>CurrWoodMachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeginAnalyze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeginAnalyze.Designer.cs">
+      <DependentUpon>BeginAnalyze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CValidationPWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CValidationPWD.Designer.cs">
+      <DependentUpon>CValidationPWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CWellComeProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CWellComeProject.Designer.cs">
+      <DependentUpon>CWellComeProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EfficiencyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EfficiencyForm.Designer.cs">
+      <DependentUpon>EfficiencyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelHelper.cs" />
+    <Compile Include="FiexdCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiexdCheck.Designer.cs">
+      <DependentUpon>FiexdCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindReplaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindReplaceForm.Designer.cs">
+      <DependentUpon>FindReplaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixedContent.Designer.cs">
+      <DependentUpon>FixedContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixedFeatures.Designer.cs">
+      <DependentUpon>FixedFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HuiZongProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HuiZongProjectForm.Designer.cs">
+      <DependentUpon>HuiZongProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImproveGCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImproveGCL.Designer.cs">
+      <DependentUpon>ImproveGCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImproveXHL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImproveXHL.Designer.cs">
+      <DependentUpon>ImproveXHL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncreaseCosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncreaseCosts.Designer.cs">
+      <DependentUpon>IncreaseCosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncreaseCostsInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncreaseCostsInfoList.Designer.cs">
+      <DependentUpon>IncreaseCostsInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncreaseCostsSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncreaseCostsSelect.Designer.cs">
+      <DependentUpon>IncreaseCostsSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPriceAnalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoPriceAnalysisForm.Designer.cs">
+      <DependentUpon>InfoPriceAnalysisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationSelect.Designer.cs">
+      <DependentUpon>InformationSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationSettingForm.Designer.cs">
+      <DependentUpon>InformationSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertQuantityUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertQuantityUnit.Designer.cs">
+      <DependentUpon>InsertQuantityUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertQuantityUnitSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertQuantityUnitSummary.Designer.cs">
+      <DependentUpon>InsertQuantityUnitSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertRepairQuantityUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertRepairQuantityUnit.Designer.cs">
+      <DependentUpon>InsertRepairQuantityUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertYTLBSummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertYTLBSummaryForm.Designer.cs">
+      <DependentUpon>InsertYTLBSummaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JJRJInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JJRJInstaller.Designer.cs">
+      <DependentUpon>JJRJInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementQuantityUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementQuantityUnit.Designer.cs">
+      <DependentUpon>ManagementQuantityUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeasuresProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeasuresProjectForm.Designer.cs">
+      <DependentUpon>MeasuresProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeasuresSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeasuresSelectForm.Designer.cs">
+      <DependentUpon>MeasuresSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AlertForm.designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\ZDHYBAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\ZDHYBAZForm.Designer.cs">
+      <DependentUpon>ZDHYBAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\ZHBXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\ZHBXForm.Designer.cs">
+      <DependentUpon>ZHBXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\ZNXTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\ZNXTForm.Designer.cs">
+      <DependentUpon>ZNXTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\QXSBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\QXSBForm.Designer.cs">
+      <DependentUpon>QXSBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\QZSBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\QZSBForm.Designer.cs">
+      <DependentUpon>QZSBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\FJAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\FJAZForm.Designer.cs">
+      <DependentUpon>FJAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\BAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\BAZForm.Designer.cs">
+      <DependentUpon>BAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\QTJXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\QTJXForm.Designer.cs">
+      <DependentUpon>QTJXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\FSSBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第一册\FSSBForm.Designer.cs">
+      <DependentUpon>FSSBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\HZZDBJXTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\HZZDBJXTForm.Designer.cs">
+      <DependentUpon>HZZDBJXTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\PMMHXTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\PMMHXTForm.Designer.cs">
+      <DependentUpon>PMMHXTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\XTZZTSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\XTZZTSForm.Designer.cs">
+      <DependentUpon>XTZZTSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\气体灭火系统\QMHGDAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\气体灭火系统\QMHGDAZForm.Designer.cs">
+      <DependentUpon>QMHGDAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\气体灭火系统\QMHXTZJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\气体灭火系统\QMHXTZJForm.Designer.cs">
+      <DependentUpon>QMHXTZJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\气体灭火系统\YMXZZTSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\气体灭火系统\YMXZZTSForm.Designer.cs">
+      <DependentUpon>YMXZZTSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\水灭火系统\QYGForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\水灭火系统\QYGForm.Designer.cs">
+      <DependentUpon>QYGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\水灭火系统\SMHGDAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\水灭火系统\SMHGDAZForm.Designer.cs">
+      <DependentUpon>SMHGDAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\水灭火系统\SMHXTZJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\水灭火系统\SMHXTZJForm.Designer.cs">
+      <DependentUpon>SMHXTZJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\水灭火系统\XHSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第七册\水灭火系统\XHSForm.Designer.cs">
+      <DependentUpon>XHSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\TFJKTSBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\TFJKTSBForm.Designer.cs">
+      <DependentUpon>TFJKTSBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\FGZZAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\FGZZAZForm.Designer.cs">
+      <DependentUpon>FGZZAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\FKZZAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\FKZZAZForm.Designer.cs">
+      <DependentUpon>FKZZAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\FMZZAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\FMZZAZForm.Designer.cs">
+      <DependentUpon>FMZZAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\QTBJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\QTBJForm.Designer.cs">
+      <DependentUpon>QTBJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\TJFZZAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\TJFZZAZForm.Designer.cs">
+      <DependentUpon>TJFZZAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\XSQJYXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\XSQJYXForm.Designer.cs">
+      <DependentUpon>XSQJYXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\ZLZZAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第九册\部件制作安装\ZLZZAZForm.Designer.cs">
+      <DependentUpon>ZLZZAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\_10KVYXJKPDXLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\_10KVYXJKPDXLForm.Designer.cs">
+      <DependentUpon>_10KVYXJKPDXLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\BYQForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\BYQForm.Designer.cs">
+      <DependentUpon>BYQForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\DJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\DJForm.Designer.cs">
+      <DependentUpon>DJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\DQTZSYForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\DQTZSYForm.Designer.cs">
+      <DependentUpon>DQTZSYForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\FLJDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\FLJDForm.Designer.cs">
+      <DependentUpon>FLJDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\HCXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\HCXForm.Designer.cs">
+      <DependentUpon>HCXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\KZSBJDYDQForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\KZSBJDYDQForm.Designer.cs">
+      <DependentUpon>KZSBJDYDQForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\MXJYZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\MXJYZForm.Designer.cs">
+      <DependentUpon>MXJYZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\PDZZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\PDZZForm.Designer.cs">
+      <DependentUpon>PDZZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\XDCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\XDCForm.Designer.cs">
+      <DependentUpon>XDCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\照明器具\QTDJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\照明器具\QTDJ.Designer.cs">
+      <DependentUpon>QTDJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\电缆及桥架\DLFSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\电缆及桥架\DLFSForm.Designer.cs">
+      <DependentUpon>DLFSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\电缆及桥架\DLGJQJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\电缆及桥架\DLGJQJForm.Designer.cs">
+      <DependentUpon>DLGJQJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\DTY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\DTY.Designer.cs">
+      <DependentUpon>DTY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\JXH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\JXH.Designer.cs">
+      <DependentUpon>JXH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\PG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\PG.Designer.cs">
+      <DependentUpon>PG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\PX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\PX.Designer.cs">
+      <DependentUpon>PX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\ZC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第二册\配管配线\ZC.Designer.cs">
+      <DependentUpon>ZC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\FMFLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\FMFLForm.Designer.cs">
+      <DependentUpon>FMFLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\DDDYForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\DDDYForm.Designer.cs">
+      <DependentUpon>DDDYForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\GDGXPTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\GDGXPTForm.Designer.cs">
+      <DependentUpon>GDGXPTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\GDZJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\GDZJForm.Designer.cs">
+      <DependentUpon>GDZJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\QTQJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\QTQJForm.Designer.cs">
+      <DependentUpon>QTQJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\SLJCJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\SLJCJForm.Designer.cs">
+      <DependentUpon>SLJCJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\SSQForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\SSQForm.Designer.cs">
+      <DependentUpon>SSQForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\SXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\SXForm.Designer.cs">
+      <DependentUpon>SXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\ZCPGBCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\其他\ZCPGBCForm.Designer.cs">
+      <DependentUpon>ZCPGBCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQBForm.Designer.cs">
+      <DependentUpon>RQBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQGDFJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQGDFJForm.Designer.cs">
+      <DependentUpon>RQGDFJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQGDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQGDForm.Designer.cs">
+      <DependentUpon>RQGDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQJRSBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQJRSBForm.Designer.cs">
+      <DependentUpon>RQJRSBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQZJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\燃气管道\RQZJForm.Designer.cs">
+      <DependentUpon>RQZJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\给排水雨水\SBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\给排水雨水\SBForm.Designer.cs">
+      <DependentUpon>SBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\给排水雨水\WFGGHJGGForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\给排水雨水\WFGGHJGGForm.Designer.cs">
+      <DependentUpon>WFGGHJGGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\给排水雨水\WSQJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\给排水雨水\WSQJForm.Designer.cs">
+      <DependentUpon>WSQJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\采暖热源\GNQJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第八册\采暖热源\GNQJForm.Designer.cs">
+      <DependentUpon>GNQJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\CPQXYLSYForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\CPQXYLSYForm.Designer.cs">
+      <DependentUpon>CPQXYLSYForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\FLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\FLForm.Designer.cs">
+      <DependentUpon>FLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\FMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\FMForm.Designer.cs">
+      <DependentUpon>FMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\GDAZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\GDAZForm.Designer.cs">
+      <DependentUpon>GDAZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\GJLJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\GJLJForm.Designer.cs">
+      <DependentUpon>GJLJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\GYGJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\GYGJForm.Designer.cs">
+      <DependentUpon>GYGJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\QTGDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\AnZhuang\第六册\QTGDForm.Designer.cs">
+      <DependentUpon>QTGDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\DataErr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\DataErr.Designer.cs">
+      <DependentUpon>DataErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\ProExplain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\ProExplain.Designer.cs">
+      <DependentUpon>ProExplain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\BaseBindingSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\BaseBindingSource.designer.cs">
+      <DependentUpon>BaseBindingSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\BaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\BaseInfo.designer.cs">
+      <DependentUpon>BaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\BaseUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\BaseUI.designer.cs">
+      <DependentUpon>BaseUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\Control\ComBoxBW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProInformation\Control\InfoGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProInformation\Control\InfoGridView.Designer.cs">
+      <DependentUpon>InfoGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\Control\popControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProInformation\Control\popControl.Designer.cs">
+      <DependentUpon>popControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\BBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\BBForm.Designer.cs">
+      <DependentUpon>BBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\GJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\GJForm.Designer.cs">
+      <DependentUpon>GJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\JCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\JCForm.Designer.cs">
+      <DependentUpon>JCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\LBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\LBForm.Designer.cs">
+      <DependentUpon>LBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\QBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\QBForm.Designer.cs">
+      <DependentUpon>QBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\QTGJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\QTGJForm.Designer.cs">
+      <DependentUpon>QTGJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\YZGJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\YZGJForm.Designer.cs">
+      <DependentUpon>YZGJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\ZBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JGForm\ZBForm.Designer.cs">
+      <DependentUpon>ZBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\BWForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\BWForm.Designer.cs">
+      <DependentUpon>BWForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\BXFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\BXFForm.Designer.cs">
+      <DependentUpon>BXFForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\FSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\FSForm.Designer.cs">
+      <DependentUpon>FSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\JSGJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\JSGJForm.Designer.cs">
+      <DependentUpon>JSGJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\JZQTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\JZQTForm.Designer.cs">
+      <DependentUpon>JZQTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\LGLBFSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\LGLBFSForm.Designer.cs">
+      <DependentUpon>LGLBFSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\LXXMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\LXXMForm.Designer.cs">
+      <DependentUpon>LXXMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\NSFFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\NSFFForm.Designer.cs">
+      <DependentUpon>NSFFForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\QZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\QZForm.Designer.cs">
+      <DependentUpon>QZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\SWGCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\SWGCForm.Designer.cs">
+      <DependentUpon>SWGCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\WMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\JZForm\WMForm.Designer.cs">
+      <DependentUpon>WMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\BaseMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\BaseMC.Designer.cs">
+      <DependentUpon>BaseMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\DDMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\DDMForm.Designer.cs">
+      <DependentUpon>DDMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\FDFHMCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\FDFHMCForm.Designer.cs">
+      <DependentUpon>FDFHMCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\GMCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\GMCForm.Designer.cs">
+      <DependentUpon>GMCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\JZMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\JZMForm.Designer.cs">
+      <DependentUpon>JZMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\LHJMCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\LHJMCForm.Designer.cs">
+      <DependentUpon>LHJMCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\MMCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\MMCForm.Designer.cs">
+      <DependentUpon>MMCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\MQForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\MQForm.Designer.cs">
+      <DependentUpon>MQForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\RFTMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\RFTMForm.Designer.cs">
+      <DependentUpon>RFTMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\SGMCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\MCForm\SGMCForm.Designer.cs">
+      <DependentUpon>SGMCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\Preview.designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\ProInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\ProInformation.designer.cs">
+      <DependentUpon>ProInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\ProSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\ProSetting.designer.cs">
+      <DependentUpon>ProSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\PrviewTJLX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\PrviewTJLX.designer.cs">
+      <DependentUpon>PrviewTJLX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\CDPZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\CDPZForm.Designer.cs">
+      <DependentUpon>CDPZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\HTHSNYForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\HTHSNYForm.Designer.cs">
+      <DependentUpon>HTHSNYForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\JXTFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\JXTFForm.Designer.cs">
+      <DependentUpon>JXTFForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\RGTFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\RGTFForm.Designer.cs">
+      <DependentUpon>RGTFForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\TSFYSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\TSFYSForm.Designer.cs">
+      <DependentUpon>TSFYSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\ZCFHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\TFForm\ZCFHForm.Designer.cs">
+      <DependentUpon>ZCFHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\QZMForm\QZMZFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\QZMForm\QZMZFForm.Designer.cs">
+      <DependentUpon>QZMZFForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\Zhuangshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\Zhuangshi.designer.cs">
+      <DependentUpon>Zhuangshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\BHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\BHForm.Designer.cs">
+      <DependentUpon>BHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\LDMForm\LDMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\LDMForm\LDMForm.Designer.cs">
+      <DependentUpon>LDMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\LDMForm\LDMZFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\LDMForm\LDMZFForm.Designer.cs">
+      <DependentUpon>LDMZFForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\LDMForm\LTTJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\LDMForm\LTTJForm.Designer.cs">
+      <DependentUpon>LTTJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\LDMForm\TJForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\LDMForm\TJForm.Designer.cs">
+      <DependentUpon>TJForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\QZMForm\KLMCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\QZMForm\KLMCForm.Designer.cs">
+      <DependentUpon>KLMCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\QZMForm\MCZSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\QZMForm\MCZSForm.Designer.cs">
+      <DependentUpon>MCZSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\QZMForm\MHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\QZMForm\MHForm.Designer.cs">
+      <DependentUpon>MHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TLYQForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TLYQForm.Designer.cs">
+      <DependentUpon>TLYQForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TPForm\PMDJTPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TPForm\PMDJTPForm.Designer.cs">
+      <DependentUpon>PMDJTPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TPForm\QTTPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TPForm\QTTPForm.Designer.cs">
+      <DependentUpon>QTTPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TPForm\TPMHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TPForm\TPMHForm.Designer.cs">
+      <DependentUpon>TPMHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TPForm\YSZXTPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\TPForm\YSZXTPForm.Designer.cs">
+      <DependentUpon>YSZXTPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\ZSXTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProInformation\TuJian\ZSForm\ZSXTForm.Designer.cs">
+      <DependentUpon>ZSXTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectAdjust.Designer.cs">
+      <DependentUpon>ProjectAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectCheck.Designer.cs">
+      <DependentUpon>ProjectCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsPeggingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectsPeggingForm.Designer.cs">
+      <DependentUpon>ProjectsPeggingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectSummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectSummaryForm.Designer.cs">
+      <DependentUpon>ProjectSummaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProjeByXml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProjeByXml.Designer.cs">
+      <DependentUpon>NewProjeByXml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherProjectForm.Designer.cs">
+      <DependentUpon>OtherProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParameterSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParameterSettings.Designer.cs">
+      <DependentUpon>ParameterSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeggingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeggingForm.Designer.cs">
+      <DependentUpon>PeggingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PriceSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriceSettingForm.Designer.cs">
+      <DependentUpon>PriceSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrimitiveFormulaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimitiveFormulaForm.designer.cs">
+      <DependentUpon>PrimitiveFormulaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProOtherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProOtherForm.Designer.cs">
+      <DependentUpon>ProOtherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProSubSegmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProSubSegmentForm.Designer.cs">
+      <DependentUpon>ProSubSegmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuantityUnitSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuantityUnitSelect.Designer.cs">
+      <DependentUpon>QuantityUnitSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchEditSummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchEditSummaryForm.Designer.cs">
+      <DependentUpon>BatchEditSummaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MobToMeasures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MobToMeasures.Designer.cs">
+      <DependentUpon>MobToMeasures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryPriceForm.Designer.cs">
+      <DependentUpon>QueryPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRepairQuantityUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRepairQuantityUnit.Designer.cs">
+      <DependentUpon>EditRepairQuantityUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickPrice.Designer.cs">
+      <DependentUpon>QuickPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairQuantityUnitSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairQuantityUnitSelect.Designer.cs">
+      <DependentUpon>RepairQuantityUnitSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairQuantityUnitSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairQuantityUnitSettingForm.Designer.cs">
+      <DependentUpon>RepairQuantityUnitSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenerateReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ProReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ProReportForm.Designer.cs">
+      <DependentUpon>ProReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelecCSFL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelecCSFL.Designer.cs">
+      <DependentUpon>SelecCSFL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectFixed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectFixed.Designer.cs">
+      <DependentUpon>SelectFixed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectGallery.Designer.cs">
+      <DependentUpon>SelectGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select\CPro_Sub_Data_Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select\CPro_Sub_Data_Filter.Designer.cs">
+      <DependentUpon>CPro_Sub_Data_Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select\SelectVariableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select\SelectVariableForm.Designer.cs">
+      <DependentUpon>SelectVariableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ShaJiangZhuanHuanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShaJiangZhuanHuanForm.Designer.cs">
+      <DependentUpon>ShaJiangZhuanHuanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialString.Designer.cs">
+      <DependentUpon>SpecialString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardConversionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardConversionForm.Designer.cs">
+      <DependentUpon>StandardConversionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubheadingsFeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubheadingsFeeForm.Designer.cs">
+      <DependentUpon>SubheadingsFeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubheadingsQuantityUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubheadingsQuantityUnit.Designer.cs">
+      <DependentUpon>SubheadingsQuantityUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TJLXSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TJLXSelect.Designer.cs">
+      <DependentUpon>TJLXSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitSummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitSummaryForm.Designer.cs">
+      <DependentUpon>UnitSummaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryGraphAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryGraphAnalysis.Designer.cs">
+      <DependentUpon>InventoryGraphAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryGuidelines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryGuidelines.Designer.cs">
+      <DependentUpon>InventoryGuidelines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryQuantityUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryQuantityUnit.Designer.cs">
+      <DependentUpon>InventoryQuantityUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewEngineeringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEngineeringForm.Designer.cs">
+      <DependentUpon>NewEngineeringForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProjectsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProjectsInfo.Designer.cs">
+      <DependentUpon>NewProjectsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewUnitProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUnitProjectForm.Designer.cs">
+      <DependentUpon>NewUnitProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartProjectForm.Designer.cs">
+      <DependentUpon>PartProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectForm.Designer.cs">
+      <DependentUpon>ProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ABaseForm.resx">
+      <DependentUpon>ABaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreaQuantityUnit.resx">
+      <DependentUpon>AreaQuantityUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtlasGalleryForm.resx">
+      <DependentUpon>AtlasGalleryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFroms\Container.resx">
+      <DependentUpon>Container.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFroms\LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFroms\MsgBox.resx">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFroms\ProgressAction.resx">
+      <DependentUpon>ProgressAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFroms\ProgressFrom.resx">
+      <DependentUpon>ProgressFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFroms\ProjProgressAction.resx">
+      <DependentUpon>ProjProgressAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFroms\XmlProjProgressAction.resx">
+      <DependentUpon>XmlProjProgressAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseFroms\XmlUnitProjProgressFrom.resx">
+      <DependentUpon>XmlUnitProjProgressFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\CBaseUnitProInfo.resx">
+      <DependentUpon>CBaseUnitProInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\CustomInfoForm.resx">
+      <DependentUpon>CustomInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\CustomUpdtForm.resx">
+      <DependentUpon>CustomUpdtForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\ContactUsForm.resx">
+      <DependentUpon>ContactUsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\BBMessageForm.resx">
+      <DependentUpon>BBMessageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchSetForm.resx">
+      <DependentUpon>BatchSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchsForm.resx">
+      <DependentUpon>BatchsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BindingBHForm.resx">
+      <DependentUpon>BindingBHForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CBaseForm.resx">
+      <DependentUpon>CBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInformation\CBasicInformation.resx">
+      <DependentUpon>CBasicInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFormColor.resx">
+      <DependentUpon>CFormColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHistoryForm.resx">
+      <DependentUpon>CHistoryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CImportIn.resx">
+      <DependentUpon>CImportIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CImportOut.resx">
+      <DependentUpon>CImportOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CInformationForm.resx">
+      <DependentUpon>CInformationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMetaanalysisForm.resx">
+      <DependentUpon>CMetaanalysisForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CostSelectControl.resx">
+      <DependentUpon>CostSelectControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvertJE.resx">
+      <DependentUpon>ConvertJE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopyFromQD.resx">
+      <DependentUpon>CopyFromQD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopyToQD.resx">
+      <DependentUpon>CopyToQD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostSelectForm.resx">
+      <DependentUpon>CostSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CParameterStatisticsFrom.resx">
+      <DependentUpon>CParameterStatisticsFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CParams_Metaanalysis.resx">
+      <DependentUpon>CParams_Metaanalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPwdForm.resx">
+      <DependentUpon>CPwdForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentUnit.resx">
+      <DependentUpon>CurrentUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrWoodMachine.resx">
+      <DependentUpon>CurrWoodMachine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeginAnalyze.resx">
+      <DependentUpon>BeginAnalyze.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CValidationPWD.resx">
+      <DependentUpon>CValidationPWD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CWellComeProject.resx">
+      <DependentUpon>CWellComeProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EfficiencyForm.resx">
+      <DependentUpon>EfficiencyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiexdCheck.resx">
+      <DependentUpon>FiexdCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindReplaceForm.resx">
+      <DependentUpon>FindReplaceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedContent.resx">
+      <DependentUpon>FixedContent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedFeatures.resx">
+      <DependentUpon>FixedFeatures.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HuiZongProjectForm.resx">
+      <DependentUpon>HuiZongProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImproveGCL.resx">
+      <DependentUpon>ImproveGCL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImproveXHL.resx">
+      <DependentUpon>ImproveXHL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncreaseCosts.resx">
+      <DependentUpon>IncreaseCosts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncreaseCostsInfoList.resx">
+      <DependentUpon>IncreaseCostsInfoList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncreaseCostsSelect.resx">
+      <DependentUpon>IncreaseCostsSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPriceAnalysisForm.resx">
+      <DependentUpon>InfoPriceAnalysisForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationSelect.resx">
+      <DependentUpon>InformationSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationSettingForm.resx">
+      <DependentUpon>InformationSettingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertQuantityUnit.resx">
+      <DependentUpon>InsertQuantityUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertQuantityUnitSummary.resx">
+      <DependentUpon>InsertQuantityUnitSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertRepairQuantityUnit.resx">
+      <DependentUpon>InsertRepairQuantityUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertYTLBSummaryForm.resx">
+      <DependentUpon>InsertYTLBSummaryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementQuantityUnit.resx">
+      <DependentUpon>ManagementQuantityUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeasuresProjectForm.resx">
+      <DependentUpon>MeasuresProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeasuresSelectForm.resx">
+      <DependentUpon>MeasuresSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AlertForm.resx">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\ZDHYBAZForm.resx">
+      <DependentUpon>ZDHYBAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\ZHBXForm.resx">
+      <DependentUpon>ZHBXForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\ZNXTForm.resx">
+      <DependentUpon>ZNXTForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第一册\QXSBForm.resx">
+      <DependentUpon>QXSBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第一册\QZSBForm.resx">
+      <DependentUpon>QZSBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第一册\FJAZForm.resx">
+      <DependentUpon>FJAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第一册\BAZForm.resx">
+      <DependentUpon>BAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第一册\QTJXForm.resx">
+      <DependentUpon>QTJXForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第一册\FSSBForm.resx">
+      <DependentUpon>FSSBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\HZZDBJXTForm.resx">
+      <DependentUpon>HZZDBJXTForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\PMMHXTForm.resx">
+      <DependentUpon>PMMHXTForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\XTZZTSForm.resx">
+      <DependentUpon>XTZZTSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\气体灭火系统\QMHGDAZForm.resx">
+      <DependentUpon>QMHGDAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\气体灭火系统\QMHXTZJForm.resx">
+      <DependentUpon>QMHXTZJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\气体灭火系统\YMXZZTSForm.resx">
+      <DependentUpon>YMXZZTSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\水灭火系统\QYGForm.resx">
+      <DependentUpon>QYGForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\水灭火系统\SMHGDAZForm.resx">
+      <DependentUpon>SMHGDAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\水灭火系统\SMHXTZJForm.resx">
+      <DependentUpon>SMHXTZJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第七册\水灭火系统\XHSForm.resx">
+      <DependentUpon>XHSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第九册\TFJKTSBForm.resx">
+      <DependentUpon>TFJKTSBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第九册\部件制作安装\FGZZAZForm.resx">
+      <DependentUpon>FGZZAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第九册\部件制作安装\FKZZAZForm.resx">
+      <DependentUpon>FKZZAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第九册\部件制作安装\FMZZAZForm.resx">
+      <DependentUpon>FMZZAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第九册\部件制作安装\QTBJForm.resx">
+      <DependentUpon>QTBJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第九册\部件制作安装\TJFZZAZForm.resx">
+      <DependentUpon>TJFZZAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第九册\部件制作安装\XSQJYXForm.resx">
+      <DependentUpon>XSQJYXForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第九册\部件制作安装\ZLZZAZForm.resx">
+      <DependentUpon>ZLZZAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\_10KVYXJKPDXLForm.resx">
+      <DependentUpon>_10KVYXJKPDXLForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\BYQForm.resx">
+      <DependentUpon>BYQForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\DJForm.resx">
+      <DependentUpon>DJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\DQTZSYForm.resx">
+      <DependentUpon>DQTZSYForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\FLJDForm.resx">
+      <DependentUpon>FLJDForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\HCXForm.resx">
+      <DependentUpon>HCXForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\KZSBJDYDQForm.resx">
+      <DependentUpon>KZSBJDYDQForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\MXJYZForm.resx">
+      <DependentUpon>MXJYZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\PDZZForm.resx">
+      <DependentUpon>PDZZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\XDCForm.resx">
+      <DependentUpon>XDCForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\照明器具\QTDJ.resx">
+      <DependentUpon>QTDJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\电缆及桥架\DLFSForm.resx">
+      <DependentUpon>DLFSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\电缆及桥架\DLGJQJForm.resx">
+      <DependentUpon>DLGJQJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\配管配线\DTY.resx">
+      <DependentUpon>DTY.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\配管配线\JXH.resx">
+      <DependentUpon>JXH.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\配管配线\PG.resx">
+      <DependentUpon>PG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\配管配线\PX.resx">
+      <DependentUpon>PX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第二册\配管配线\ZC.resx">
+      <DependentUpon>ZC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\FMFLForm.resx">
+      <DependentUpon>FMFLForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\其他\DDDYForm.resx">
+      <DependentUpon>DDDYForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\其他\GDGXPTForm.resx">
+      <DependentUpon>GDGXPTForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\其他\GDZJForm.resx">
+      <DependentUpon>GDZJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\其他\QTQJForm.resx">
+      <DependentUpon>QTQJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\其他\SLJCJForm.resx">
+      <DependentUpon>SLJCJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\其他\SSQForm.resx">
+      <DependentUpon>SSQForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\其他\SXForm.resx">
+      <DependentUpon>SXForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\其他\ZCPGBCForm.resx">
+      <DependentUpon>ZCPGBCForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\燃气管道\RQBForm.resx">
+      <DependentUpon>RQBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\燃气管道\RQGDFJForm.resx">
+      <DependentUpon>RQGDFJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\燃气管道\RQGDForm.resx">
+      <DependentUpon>RQGDForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\燃气管道\RQJRSBForm.resx">
+      <DependentUpon>RQJRSBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\燃气管道\RQZJForm.resx">
+      <DependentUpon>RQZJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\给排水雨水\SBForm.resx">
+      <DependentUpon>SBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\给排水雨水\WFGGHJGGForm.resx">
+      <DependentUpon>WFGGHJGGForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\给排水雨水\WSQJForm.resx">
+      <DependentUpon>WSQJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第八册\采暖热源\GNQJForm.resx">
+      <DependentUpon>GNQJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第六册\CPQXYLSYForm.resx">
+      <DependentUpon>CPQXYLSYForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第六册\FLForm.resx">
+      <DependentUpon>FLForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第六册\FMForm.resx">
+      <DependentUpon>FMForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第六册\GDAZForm.resx">
+      <DependentUpon>GDAZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第六册\GJLJForm.resx">
+      <DependentUpon>GJLJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第六册\GYGJForm.resx">
+      <DependentUpon>GYGJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\AnZhuang\第六册\QTGDForm.resx">
+      <DependentUpon>QTGDForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\Control\ComBoxBW.resx">
+      <DependentUpon>ComBoxBW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\DataErr.resx">
+      <DependentUpon>DataErr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\ProExplain.resx">
+      <DependentUpon>ProExplain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\BaseBindingSource.resx">
+      <DependentUpon>BaseBindingSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\BaseInfo.resx">
+      <DependentUpon>BaseInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\BaseUI.resx">
+      <DependentUpon>BaseUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\Control\InfoGridView.resx">
+      <DependentUpon>InfoGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\Control\popControl.resx">
+      <DependentUpon>popControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JGForm\BBForm.resx">
+      <DependentUpon>BBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JGForm\GJForm.resx">
+      <DependentUpon>GJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JGForm\JCForm.resx">
+      <DependentUpon>JCForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JGForm\LBForm.resx">
+      <DependentUpon>LBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JGForm\QBForm.resx">
+      <DependentUpon>QBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JGForm\QTGJForm.resx">
+      <DependentUpon>QTGJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JGForm\YZGJForm.resx">
+      <DependentUpon>YZGJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JGForm\ZBForm.resx">
+      <DependentUpon>ZBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JZForm\BWForm.resx">
+      <DependentUpon>BWForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JZForm\BXFForm.resx">
+      <DependentUpon>BXFForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JZForm\FSForm.resx">
+      <DependentUpon>FSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\JZForm\QZForm.resx">
+      <DependentUpon>QZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\BaseMC.resx">
+      <DependentUpon>BaseMC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\DDMForm.resx">
+      <DependentUpon>DDMForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\FDFHMCForm.resx">
+      <DependentUpon>FDFHMCForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\GMCForm.resx">
+      <DependentUpon>GMCForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\JZMForm.resx">
+      <DependentUpon>JZMForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\LHJMCForm.resx">
+      <DependentUpon>LHJMCForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\MMCForm.resx">
+      <DependentUpon>MMCForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\MQForm.resx">
+      <DependentUpon>MQForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\RFTMForm.resx">
+      <DependentUpon>RFTMForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\MCForm\SGMCForm.resx">
+      <DependentUpon>SGMCForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\ProInformation.resx">
+      <DependentUpon>ProInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\ProSetting.resx">
+      <DependentUpon>ProSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\PrviewTJLX.resx">
+      <DependentUpon>PrviewTJLX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\TFForm\CDPZForm.resx">
+      <DependentUpon>CDPZForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\TFForm\HTHSNYForm.resx">
+      <DependentUpon>HTHSNYForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\TFForm\JXTFForm.resx">
+      <DependentUpon>JXTFForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\TFForm\RGTFForm.resx">
+      <DependentUpon>RGTFForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\TFForm\TSFYSForm.resx">
+      <DependentUpon>TSFYSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\TFForm\ZCFHForm.resx">
+      <DependentUpon>ZCFHForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\Zhuangshi.resx">
+      <DependentUpon>Zhuangshi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\ZSForm\LDMForm\LDMForm.resx">
+      <DependentUpon>LDMForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\ZSForm\LDMForm\LDMZFForm.resx">
+      <DependentUpon>LDMZFForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\ZSForm\LDMForm\LTTJForm.resx">
+      <DependentUpon>LTTJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\ZSForm\LDMForm\TJForm.resx">
+      <DependentUpon>TJForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\ZSForm\QZMForm\MHForm.resx">
+      <DependentUpon>MHForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProInformation\TuJian\ZSForm\TLYQForm.resx">
+      <DependentUpon>TLYQForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectAdjust.resx">
+      <DependentUpon>ProjectAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectCheck.resx">
+      <DependentUpon>ProjectCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectsPeggingForm.resx">
+      <DependentUpon>ProjectsPeggingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectSummaryForm.resx">
+      <DependentUpon>ProjectSummaryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjeByXml.resx">
+      <DependentUpon>NewProjeByXml.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherProjectForm.resx">
+      <DependentUpon>OtherProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParameterSettings.resx">
+      <DependentUpon>ParameterSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeggingForm.resx">
+      <DependentUpon>PeggingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriceSettingForm.resx">
+      <DependentUpon>PriceSettingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimitiveFormulaForm.resx">
+      <DependentUpon>PrimitiveFormulaForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProOtherForm.resx">
+      <DependentUpon>ProOtherForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ProSubSegmentForm.resx">
+      <DependentUpon>ProSubSegmentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuantityUnitSelect.resx">
+      <DependentUpon>QuantityUnitSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchEditSummaryForm.resx">
+      <DependentUpon>BatchEditSummaryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MobToMeasures.resx">
+      <DependentUpon>MobToMeasures.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryPriceForm.resx">
+      <DependentUpon>QueryPriceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRepairQuantityUnit.resx">
+      <DependentUpon>EditRepairQuantityUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickPrice.resx">
+      <DependentUpon>QuickPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairQuantityUnitSelect.resx">
+      <DependentUpon>RepairQuantityUnitSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairQuantityUnitSettingForm.resx">
+      <DependentUpon>RepairQuantityUnitSettingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ProReportForm.resx">
+      <DependentUpon>ProReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelecCSFL.resx">
+      <DependentUpon>SelecCSFL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectFixed.resx">
+      <DependentUpon>SelectFixed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectGallery.resx">
+      <DependentUpon>SelectGallery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select\CPro_Sub_Data_Filter.resx">
+      <DependentUpon>CPro_Sub_Data_Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select\SelectVariableForm.resx">
+      <DependentUpon>SelectVariableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShaJiangZhuanHuanForm.resx">
+      <DependentUpon>ShaJiangZhuanHuanForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialString.resx">
+      <DependentUpon>SpecialString.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardConversionForm.resx">
+      <DependentUpon>StandardConversionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubheadingsFeeForm.resx">
+      <DependentUpon>SubheadingsFeeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryGraphAnalysis.resx">
+      <DependentUpon>InventoryGraphAnalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryGuidelines.resx">
+      <DependentUpon>InventoryGuidelines.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryQuantityUnit.resx">
+      <DependentUpon>InventoryQuantityUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEngineeringForm.resx">
+      <DependentUpon>NewEngineeringForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjectsInfo.resx">
+      <DependentUpon>NewProjectsInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUnitProjectForm.resx">
+      <DependentUpon>NewUnitProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartProjectForm.resx">
+      <DependentUpon>PartProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectForm.resx">
+      <DependentUpon>ProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryFixedLibrary.resx">
+      <DependentUpon>QueryFixedLibrary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryForm.resx">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryGallery.resx">
+      <DependentUpon>QueryGallery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSubsegmenColumn.resx">
+      <DependentUpon>SelectSubsegmenColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubheadingsQuantityUnit.resx">
+      <DependentUpon>SubheadingsQuantityUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSegmentForm.resx">
+      <DependentUpon>SubSegmentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysWoodMachineForm.resx">
+      <DependentUpon>SysWoodMachineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjectWizardForm.resx">
+      <DependentUpon>NewProjectWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TJLXSelect.resx">
+      <DependentUpon>TJLXSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitSummaryForm.resx">
+      <DependentUpon>UnitSummaryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPriceLibraryManagement.resx">
+      <DependentUpon>UserPriceLibraryManagement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPriceLibrarySettingForm.resx">
+      <DependentUpon>UserPriceLibrarySettingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserQuantityUnitSelect.resx">
+      <DependentUpon>UserQuantityUnitSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardsForm.resx">
+      <DependentUpon>WizardsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WoodMachinePeggingForm.resx">
+      <DependentUpon>WoodMachinePeggingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairQuantityUnitManagement.resx">
+      <DependentUpon>RepairQuantityUnitManagement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationForm.resx">
+      <DependentUpon>ApplicationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProMeasuresFrom.resx">
+      <DependentUpon>ProMeasuresFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_PBaseControls.resx">
+      <DependentUpon>_PBaseControls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_UBaseControls.resx">
+      <DependentUpon>_UBaseControls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CImportOut_ETenders.resx">
+      <DependentUpon>CImportOut_ETenders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeginAnalyze1.resx">
+      <DependentUpon>BeginAnalyze1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeginAnalyze2.resx">
+      <DependentUpon>BeginAnalyze2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeginAnalyze3.resx">
+      <DependentUpon>BeginAnalyze3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeginAnalyze4.resx">
+      <DependentUpon>BeginAnalyze4.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenZBBS.resx">
+      <DependentUpon>OpenZBBS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QueryFixedLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryFixedLibrary.Designer.cs">
+      <DependentUpon>QueryFixedLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryForm.Designer.cs">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryGallery.Designer.cs">
+      <DependentUpon>QueryGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectSubsegmenColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectSubsegmenColumn.Designer.cs">
+      <DependentUpon>SelectSubsegmenColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubSegmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubSegmentForm.Designer.cs">
+      <DependentUpon>SubSegmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysWoodMachineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysWoodMachineForm.Designer.cs">
+      <DependentUpon>SysWoodMachineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProjectWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProjectWizardForm.Designer.cs">
+      <DependentUpon>NewProjectWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPriceLibraryManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPriceLibraryManagement.Designer.cs">
+      <DependentUpon>UserPriceLibraryManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPriceLibrarySettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPriceLibrarySettingForm.Designer.cs">
+      <DependentUpon>UserPriceLibrarySettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserQuantityUnitSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserQuantityUnitSelect.Designer.cs">
+      <DependentUpon>UserQuantityUnitSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WizardsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizardsForm.Designer.cs">
+      <DependentUpon>WizardsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WoodMachinePeggingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WoodMachinePeggingForm.Designer.cs">
+      <DependentUpon>WoodMachinePeggingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairQuantityUnitManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairQuantityUnitManagement.Designer.cs">
+      <DependentUpon>RepairQuantityUnitManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForm.Designer.cs">
+      <DependentUpon>ApplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProMeasuresFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProMeasuresFrom.Designer.cs">
+      <DependentUpon>ProMeasuresFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_PBaseControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_PBaseControls.Designer.cs">
+      <DependentUpon>_PBaseControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_UBaseControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_UBaseControls.Designer.cs">
+      <DependentUpon>_UBaseControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CImportOut_ETenders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CImportOut_ETenders.Designer.cs">
+      <DependentUpon>CImportOut_ETenders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeginAnalyze1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeginAnalyze1.Designer.cs">
+      <DependentUpon>BeginAnalyze1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeginAnalyze2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeginAnalyze2.Designer.cs">
+      <DependentUpon>BeginAnalyze2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeginAnalyze3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeginAnalyze3.Designer.cs">
+      <DependentUpon>BeginAnalyze3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeginAnalyze4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeginAnalyze4.Designer.cs">
+      <DependentUpon>BeginAnalyze4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenZBBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenZBBS.Designer.cs">
+      <DependentUpon>OpenZBBS.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bidserver\Bidserver.csproj">
+      <Project>{4fb70ea6-9cd9-4087-898e-f383b490f23e}</Project>
+      <Name>Bidserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commons\GOLDSOFT.QDJJ.COMMONS.csproj">
+      <Project>{277E16F1-C607-49E4-BE7E-E578669C2DFE}</Project>
+      <Name>GOLDSOFT.QDJJ.COMMONS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GLODSOFT.QDJJ.BUSINESS\GLODSOFT.QDJJ.BUSINESS.csproj">
+      <Project>{C29BBFAD-A884-4711-A652-09B2C9B90CEA}</Project>
+      <Name>GLODSOFT.QDJJ.BUSINESS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JJRJ_USER_CTRL\JJRJ_USER_CTRL.csproj">
+      <Project>{DB5CA939-57D8-48FB-B86D-649473EC0D4E}</Project>
+      <Name>JJRJ_USER_CTRL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config\options.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="config\措施项目模板.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="config\模板.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Wizard.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\安装增加费不分专业.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第一册机械设备安装工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第七册消防设备安装工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第三册热力设备安装工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第九册通风 空调工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第二册电气设备安装工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第五册静置设备与工艺金属结构制作安装工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第八册给排水采暖燃气工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第六册工业管道工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第十三册长距离输送管道工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第十二册建筑智能化系统设备安装工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第十册自动化控制仪表安装工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第十四册刷油 防腐蚀 绝热工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\子目增加费\第四册炉窑砌筑工程.zjfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2006园林定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2006安装定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2006市政定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2006建筑装饰定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2006绿化定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2009园林定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2009安装定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2009市政定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2009建筑装饰定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\定额库\2009绿化定额价目表.dcsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\清单库\2004园林绿化清单库.qdsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\清单库\2004安装清单库.qdsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\清单库\2004市政清单库.qdsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\清单库\2004建筑清单库.qdsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\清单库\2009园林绿化清单库.qdsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\清单库\2009安装清单库.qdsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\清单库\2009市政清单库.qdsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\清单库\2009建筑清单库.qdsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="023.ico" />
+    <Content Include="config\yun.swf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\专业版.swf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\旗舰版.swf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\领先版.swf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GoldSoftHost.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\ConvertUnit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Libraries.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\PrimitiveFormula.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\CostType.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Features.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Params_Other.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\QReport.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\ReportList.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Schema.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\UserPrice.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Wizard.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Attribute.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Library.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Professional.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\UnitProject.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\FunctionList.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\WoodMachineIndex.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Component.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Params_Metaanalysis.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Color_Temp.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\ProInformationTree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\30正方体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\31长方体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\32棱柱体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\33棱锥体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\34棱台体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\35圆锥体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\36圆台体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\37四棱台体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\38圆柱体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\39斜切圆柱体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\40圆环体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\41球体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\42球缺体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\43球带体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\44交叉圆柱体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\45桶状体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\46楔形体体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\47圆环体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\48四棱锥台形基础.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\49杯形基础.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\50独立柱基础.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\51切头方锥形基础.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\52钢管绝热体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\53阀门绝热体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\54法兰绝热体积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\55单管伴热绝热.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\56双管伴热绝热.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算体积图片\57管道伴热绝热.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算周长图片\58圆形的周长.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算周长图片\59椭圆的周长.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算周长图片\60扇形的弧长.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算周长图片\61正方体对角线.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算周长图片\62长方体对角线长.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\0矩形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\10椭圆面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\11扇形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\12正多边形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\13断面面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\14断面面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\15断面面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\16正方体侧面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\17长方体侧面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\18长方体的全面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\19正方体表面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\1任意三角形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\20条形基础.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\21管道防腐面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\22阀门防腐面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\23法兰防腐面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\24钢管刷油面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\25阀门刷油面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\26法兰刷油面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\27单管伴热刷油.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\28双管伴热刷油.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\29管道伴热刷油.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\2任意三角形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\3平行四边形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\4梯形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\5任意四边形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\6平底四边形面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\7缺圆环面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\8圆面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\计算面积图片\9圆环面积.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\送电线路图形\63送电线路.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\送电线路图形\64送电线路.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\送电线路图形\65送电线路.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\送电线路图形\66塔位立于山坡的施工基础.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\送电线路图形\67塔位立于山脊上的施工基础.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\送电线路图形\68施工排水沟.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layout\default.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layout\SubSegment.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="config\area.are">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="config\config.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="config\变量对应表.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="config\安装专业工程信息.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="config\工程信息.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="config\工程说明.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="config\自动报价.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\DataSources\GoldSoft.PT.Commons.CEntitySuomanager.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="qdjj.pfx" />
+    <None Include="Resources\取消 .png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\确定.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Service References\ServiceReference1\WebSuo1.wsdl" />
+    <None Include="帮助文档\定额帮助.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="帮助文档\常见问题解答.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="帮助文档\操作手册.doc" />
+    <None Include="帮助文档\清单帮助.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="帮助文档\清单计价2013专业版操作说明.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="帮助文档\清单计价2013旗舰版操作说明.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="帮助文档\清单计价2013领先版操作说明.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\信息价格库\信息价格库.IPL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\图集库\陕标02系列建筑图集.tjsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\图集库\陕标09系列建筑图集.tjsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\00.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\系统库\报表格式.RF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\系统库\用户价格库.UPL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\系统库\管理费利润表.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="库文件\系统库\补充材机库.BCL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\其他项目\其他项目【汉中】.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\其他项目\其他项目【通用】.qtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【一般土建专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【人工土石方专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【园林绿化专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【安装专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【市政安装专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【市政建筑专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【市政建筑安装专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【建筑装饰专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【机械土石方专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【桩基专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\措施项目模板\【装饰装修专业】措施模板.cmbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2004汇总分析表【不扣劳保和定额测定费】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2004汇总分析表【只扣劳保】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2004汇总分析表【扣劳保和定额测定费】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2006汇总分析表%28232号文件%29【不扣劳保和定额测定费】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2006汇总分析表%28232号文件%29【只扣劳保】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2006汇总分析表%28232号文件%29【扣劳保和定额测定费】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2009汇总分析表【不扣劳保】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2009汇总分析表【扣劳保】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2012汇总分析表【不扣劳保】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="模板文件\汇总分析模板\2012汇总分析表【扣劳保】.hzfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\023.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Z10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\zzz10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\123.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\加入选择项.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\全部加入.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\新建单项工程.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\保存成功.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\是 否.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\背景水印1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\移除.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="living1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\登陆.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\背景水印12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\登陆2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\加入选择项1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\全部加入1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\新建单项工程1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\移除1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\背景水印--领先版.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\工程信息水印.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\登陆-旗舰版3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\登陆-专业版1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\打开文件.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\电子标书.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\新建工程.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\新建项目.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="qdjj_bg\images\q2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="qdjj_bg\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Resources\Imgs\buisness.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\configure.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\filenew.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\filesave.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\folder.png" />
+    <Content Include="Resources\Imgs\folder_sent_mail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\identity.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\人才机数.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\子目数.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\定额库.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\工业管道.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\工程总造价.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\建筑装饰4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\措施项目费.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\气体灭火.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\水灭火.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\泡沫灭火.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\消火栓.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\清单库.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\清单数.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\火灾报警.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\燃气管道.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\电气设备.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\给排水.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\职能综合.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\通风空调.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\采暖热源.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imgs\锁.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\保存编辑.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\关闭工程.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\单位工程1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\单项工程.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\另存为.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\向导.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\导入工程文件.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\导出BD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\导出JZBX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\导出TBS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\导出ZBS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\导出工程文件.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\工程配置.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\打开.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\操作日志.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\新工程.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\新项目.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\计算.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\设置工程密码.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxm\设置项目密码.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\工业管道.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\工程设置.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\工程说明.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\建筑装饰.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\智能综合.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\机械设备.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\气体灭火系统.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\水灭火系统.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\泡沫灭火系统.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\消火栓.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\火灾自动报警系统.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\燃气管道.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\电气设备.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\给排水雨水.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\综合布线.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\通风空调工程.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gcxx\采暖热源.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\edit_user.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\identity.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\价格维护.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\定额帮助.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\常见问题解答.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\我们的资料.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\操作手册.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\更新信息价.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\清单帮助.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\版本.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\gybz\锁信息.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\人民币大小写转换.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\分列布局.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\图元公式.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\图集查询.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\层叠布局.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\水平布局.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\特殊字符1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\计算器.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\配色方案.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\img\xtgj\默认布局.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\LOG.jpg" />
+    <None Include="Resources\LOG1.jpg" />
+    <Content Include="Resources\联系我们.jpg" />
+    <None Include="Service References\ServiceReference1\WebSuo1.disco" />
+    <Content Include="XML模板\单位工程造价汇总表\001.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\003.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\005.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\006.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\007.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\008.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\009.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\单位工程造价汇总表\010.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\001.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\002.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\003.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\004.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\005.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\007.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\008.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\009.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML模板\规费税金清单表\010.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.AgXpo.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.Data.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.Utils.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.Wpf.Grid.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.Wpf.NavBar.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.Xpo.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraBars.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraCharts.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraEditors.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraGrid.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraLayout.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraNavBar.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraPivotGrid.v9.3.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraPrinting.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraReports.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraRichEdit.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraScheduler.v9.3.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraScheduler.v9.3.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraScheduler.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraSpellChecker.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraTreeList.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraVerticalGrid.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CHS\DevExpress.XtraWizard.v9.3.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="工程文件\备份文件\说明.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="库文件\专业库\专业库1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="库文件\专业库\专业库2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="库文件\专业库\专业库3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="库文件\系统库\目录说明.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="金建服务\GOLDSOFT.SERVICES.IServicesObject.pdb" />
+    <Content Include="金建服务\GOLDSOFT.SERVICES.pdb" />
+    <Content Include="金建服务\GOLDSOFT.SERVICES.ServerObject.pdb" />
+    <Content Include="金建服务\GoldSoftHost.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cache\" />
+    <Folder Include="DLL\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="工程文件\单位项目\" />
+    <Folder Include="工程文件\导出文件\" />
+    <Folder Include="工程文件\项目文件\" />
+    <Folder Include="库文件\用户价格库\" />
+    <Folder Include="开发文档\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

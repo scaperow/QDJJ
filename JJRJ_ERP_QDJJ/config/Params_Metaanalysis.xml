@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<!-- 此数据集和用来指定默认的属性列表 -->
+<DocumentElement>
+  <Params_Metaanalysis>
+    <Code>FGCF</Code>
+    <Name>分部分项工程费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+  <Params_Metaanalysis>
+    <Code>FBFXF</Code>
+    <Name>分部分项合计∑(综合单价×工程量)</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>FBFXCJ</Code>
+    <Name>分部分项可能发生的差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  
+  <Params_Metaanalysis>
+    <Code>FBFXJSCJ</Code>
+    <Name>分部分项结算差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  
+  
+  <Params_Metaanalysis>
+    <Code>FBFXRGCJ</Code>
+    <Name>分部分项人工费调增差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>CSXMF</Code>
+    <Name>措施项目费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+  <Params_Metaanalysis>
+    <Code>CSXM</Code>
+    <Name>措施项目合计∑(综合单价×工程量)</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  
+  <Params_Metaanalysis>
+    <Code>CSXMCJ</Code>
+    <Name>措施项目可能发生的差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>CSXMJSCJ</Code>
+    <Name>措施项目结算差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>CSXMRGCJ</Code>
+    <Name>措施项目人工费调增差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>AQWM</Code>
+    <Name>其中：安全文明施工措施费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>WMSG</Code>
+    <Name>安全文明施工费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>HJBH</Code>
+    <Name>环境保护费（含排污）</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+
+  <Params_Metaanalysis>
+    <Code>LSSS</Code>
+    <Name>临时设施费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>KCAQWMCSF</Code>
+    <Name>扣除安全文明施工措施费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>QTXMF</Code>
+    <Name>其他项目费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>QTXM</Code>
+    <Name>其他项目合计∑(综合单价×工程量)</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>QTXMCJ</Code>
+    <Name>其他项目可能发生的差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>QTXMJSCJ</Code>
+    <Name>其他项目结算差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+  <Params_Metaanalysis>
+    <Code>QTXMRGCJ</Code>
+    <Name>其他项目人工费调增差价合计</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>GF</Code>
+    <Name>规费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>SHBZ</Code>
+    <Name>社会保障费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>LBTC</Code>
+    <Name>养老保险</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>SYBX</Code>
+    <Name>失业保险</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>YILBX</Code>
+    <Name>医疗保险</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+  <Params_Metaanalysis>
+    <Code>GSBX</Code>
+    <Name>工伤保险</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>CJBX</Code>
+    <Name>残疾人就业保险</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>NGBX</Code>
+    <Name>女工生育保险</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>ZFJJ</Code>
+    <Name>住房公积金</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>SHBX</Code>
+    <Name>危险作业意外伤害保险</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>DECD</Code>
+    <Name>定额测定费</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+  <Params_Metaanalysis>
+    <Code>QTFY</Code>
+    <Name>国家和省政府规定的其他费用</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+
+  <Params_Metaanalysis>
+    <Code>BHSZJ</Code>
+    <Name>不含税单位工程造价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+  <Params_Metaanalysis>
+    <Code>SJ</Code>
+    <Name>税金</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+  <Params_Metaanalysis>
+    <Code>GCJ</Code>
+    <Name>含税单位工程造价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+  <Params_Metaanalysis>
+    <Code>ZZJ</Code>
+    <Name>最终确定的单位工程造价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </Params_Metaanalysis>
+
+
+</DocumentElement>

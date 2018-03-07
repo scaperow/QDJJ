@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<!-- 所有功能性列表 -->
+<DocumentElement>
+  <Features>
+    <ImageMember>0</ImageMember>
+    <ValueMember>新建项目管理(项目解决方案)</ValueMember>
+    <Remark>用于创建普通工程的项目(.jxmx)</Remark>
+    <CmdName>1</CmdName>
+  </Features>
+  <!--<Features>
+    <ImageMember>0</ImageMember>
+    <ValueMember>单项工程(单项工程)</ValueMember>
+    <Remark>用于创建单项工程(.jdxx)</Remark>
+    <CmdName>2</CmdName>
+  </Features>-->
+  <Features>
+    <ImageMember>0</ImageMember>
+    <ValueMember>新建单位工程(单位工程解决方案)</ValueMember>
+    <Remark>用于创建普通单位工程文件(.jgcx)</Remark>
+    <CmdName>3</CmdName>
+  </Features>
+	
+	<!--<Features>
+		<ImageMember>0</ImageMember>
+		<ValueMember>导入ZBS</ValueMember>
+		<Remark>导入ZBS</Remark>
+		<CmdName>4</CmdName>
+	</Features>
+	<Features>
+		<ImageMember>0</ImageMember>
+		<ValueMember>导入TBS</ValueMember>
+		<Remark>导入TBS</Remark>
+		<CmdName>5</CmdName>
+	</Features>-->
+</DocumentElement>

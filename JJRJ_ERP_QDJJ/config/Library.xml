@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<!-- 此数据集用于库文件的对应 -->
+<DocumentElement>
+    <Library>
+    <Name>建筑清单库</Name>
+    <typeName>清单库</typeName>
+      <Relation>0</Relation>
+      <fileName></fileName>
+  </Library>
+  <Library>
+    <Name>安装清单库</Name>
+    <typeName>清单库</typeName>
+    <Relation>1</Relation>
+    <fileName></fileName>
+  </Library>
+  <Library>
+    <Name>市政清单库</Name>
+    <typeName>清单库</typeName>
+    <Relation>2</Relation>
+    <fileName></fileName>
+  </Library>
+  <Library>
+    <Name>园林绿化清单库</Name>
+    <typeName>清单库</typeName>
+    <Relation>3</Relation>
+    <fileName></fileName>
+  </Library>
+  
+  <Library>
+    <Name>建筑装饰定额价目表</Name>
+    <typeName>定额库</typeName>
+    <Relation></Relation>
+    <fileName></fileName>
+  </Library>
+  <Library>
+    <Name>安装定额价目表</Name>
+    <typeName>定额库</typeName>
+    <Relation></Relation>
+    <fileName></fileName>
+  </Library>
+  <Library>
+    <Name>市政定额价目表</Name>
+    <typeName>定额库</typeName>
+    <Relation></Relation>
+    <fileName></fileName>
+  </Library>
+  <Library>
+    <Name>绿化定额价目表</Name>
+    <typeName>定额库</typeName>
+    <Relation></Relation>
+    <fileName></fileName>
+  </Library>
+
+  <Library>
+    <Name>园林定额价目表</Name>
+    <typeName>定额库</typeName>
+    <fileName></fileName>
+    <Relation></Relation>
+  </Library>
+
+	
+	<Library>
+		<Name>陕标09系列建筑图集</Name>
+		<typeName>图集库</typeName>
+		<fileName></fileName>
+		<Relation></Relation>
+	</Library>
+	<Library>
+		<Name>陕标02系列建筑图集</Name>
+		<typeName>图集库</typeName>
+		<fileName></fileName>
+		<Relation></Relation>
+	</Library>
+	<Library>
+		<Name></Name>
+		<typeName>图集库</typeName>
+		<fileName></fileName>
+		<Relation></Relation>
+	</Library>
+
+
+</DocumentElement>

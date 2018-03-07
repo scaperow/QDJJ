@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{277E16F1-C607-49E4-BE7E-E578669C2DFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GOLDSOFT.QDJJ.COMMONS</RootNamespace>
+    <AssemblyName>GOLDSOFT.QDJJ.COMMONS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.Data.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.Utils.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZiboSoft.Commons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZiboSoft.Commons.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\_ColumnsGLJ.cs" />
+    <Compile Include="Application\_RepairQuantityUnit.cs" />
+    <Compile Include="CEntity\CEntitySubSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\GlobalStyle.cs" />
+    <Compile Include="Configuration\_CAppearance.cs" />
+    <Compile Include="Configuration\_CellStyle.cs" />
+    <Compile Include="Configuration\_ColumnLayout.cs" />
+    <Compile Include="Configuration\_GridStyle.cs" />
+    <Compile Include="Configuration\_SchemeColor.cs" />
+    <Compile Include="Configuration\_SpecialStyle.cs" />
+    <Compile Include="Configuration\_StyleObject.cs" />
+    <Compile Include="Configuration\_TreeListModelStyle.cs" />
+    <Compile Include="Configuration\_TreeListStyle.cs" />
+    <Compile Include="Distinct\MergerDW.cs" />
+    <Compile Include="Distinct\MergerSSDWGC.cs" />
+    <Compile Include="Application\_Configuration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entries\_BaseObject.cs" />
+    <Compile Include="Application\_RepairQuantityUnitList.cs" />
+    <Compile Include="Application\_RepairQuantityUnitInfo.cs" />
+    <Compile Include="EntrtyComparer.cs" />
+    <Compile Include="OBJECTS\Implementation\_En_SubSegment.cs" />
+    <Compile Include="OBJECTS\Implementation\_ProjectObjectInfo.cs" />
+    <Compile Include="OBJECTS\Implementation\_ProMeasures.cs" />
+    <Compile Include="OBJECTS\Implementation\_Pro_Attr.cs" />
+    <Compile Include="OBJECTS\Implementation\_Pro_SubSegment.cs" />
+    <Compile Include="OBJECTS\Implementation\_Un_SubSegment.cs" />
+    <Compile Include="OBJECTS\Implementation\_En_Attr.cs" />
+    <Compile Include="OBJECTS\Interface\ISubSegment.cs" />
+    <Compile Include="OBJECTS\Interface\IDirectory.cs" />
+    <Compile Include="OBJECTS\_COBJECTS.cs" />
+    <Compile Include="OBJECTS\_DataObjectList.cs" />
+    <Compile Include="OBJECTS\_Directory.cs" />
+    <Compile Include="OBJECTS\_Engineering.cs" />
+    <Compile Include="OBJECTS\_Projects.cs" />
+    <Compile Include="OBJECTS\Property\_Property.cs" />
+    <Compile Include="OBJECTS\_Reveal.cs" />
+    <Compile Include="OBJECTS\_UnitProject.cs" />
+    <Compile Include="OBJECT\_EngMetaanalysis.cs" />
+    <Compile Include="_EventHandler.cs" />
+    <Compile Include="OBJECT\_ObjMetaanalysis.cs" />
+    <Compile Include="OBJECT\_ProMetaanalysis.cs" />
+    <Compile Include="OBJECT\_Setting.cs" />
+    <Compile Include="OBJECT\_UnMetaanalysis.cs" />
+    <Compile Include="QuantityUnitSummary\YTLBSummaryInfo.cs" />
+    <Compile Include="QuantityUnitSummary\YTLBSummaryList.cs" />
+    <Compile Include="Application\_Cache.cs" />
+    <Compile Include="Application\_CArrayList.cs" />
+    <Compile Include="Application\_CDirectories.cs" />
+    <Compile Include="Application\_CInformations.cs" />
+    <Compile Include="Application\_TransitPriceLibrary.cs" />
+    <Compile Include="Application\_Profession.cs" />
+    <Compile Include="Application\_UnitSummary.cs" />
+    <Compile Include="Application\_UserPriceLibraryInfo.cs" />
+    <Compile Include="Application\_UserRules.cs" />
+    <Compile Include="CEntities\CTEntitiesFixedIncreased.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntities\CTEntitiesOtherProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntities\CTEntitiesQuantityUnitSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntity\CEntityFixedIncreased.cs" />
+    <Compile Include="CEntity\CEntityOtherProject.cs" />
+    <Compile Include="CEntity\CEntityQuantityUnitSummary.cs" />
+    <Compile Include="Distinct\MergerSL.cs" />
+    <Compile Include="Entries\_IncreaseCostsInfo.cs" />
+    <Compile Include="Entries\_IncreaseCostsList.cs" />
+    <Compile Include="Entries\_ObjectStandardConversionInfo.cs" />
+    <Compile Include="Statistics\SubSegment\_ChapterInfo_Statistics.cs" />
+    <Compile Include="Statistics\SubSegment\_FestivalInfo_Statistics.cs" />
+    <Compile Include="Statistics\SubSegment\_ProfessionalInfo_Statistics.cs" />
+    <Compile Include="SubSegment\_ChapterInfo.cs" />
+    <Compile Include="Entries\_QuantityUnitComponentInfo.cs" />
+    <Compile Include="Entries\_QuantityUnitComponentList.cs" />
+    <Compile Include="SubSegment\_FestivalInfo.cs" />
+    <Compile Include="Entries\_FixedListInfo.cs" />
+    <Compile Include="Entries\_List.cs" />
+    <Compile Include="SubSegment\_Methods.cs" />
+    <Compile Include="Entries\_ObjectInfo.cs" />
+    <Compile Include="Entries\_ObjectQuantityUnitInfo.cs" />
+    <Compile Include="Entries\_StandardConversionInfo.cs" />
+    <Compile Include="Entries\_StandardConversionList.cs" />
+    <Compile Include="Entries\_SubheadingsFeeInfo.cs" />
+    <Compile Include="Entries\_SubheadingsFeeList.cs" />
+    <Compile Include="MeasuresProject\_CommonrojectInfo.cs" />
+    <Compile Include="MeasuresProject\_MeasuresProject.cs" />
+    <Compile Include="MeasuresProject\_MFixedListInfo.cs" />
+    <Compile Include="MeasuresProject\_MSubheadingsInfo.cs" />
+    <Compile Include="SubSegment\_FFixedListInfo.cs" />
+    <Compile Include="SubSegment\_FSubheadingsInfo.cs" />
+    <Compile Include="SubSegment\_ProfessionalInfo.cs" />
+    <Compile Include="UnitProject\_BasicInformation.cs" />
+    <Compile Include="UnitProject\_BiddingInformation.cs" />
+    <Compile Include="UnitProject\_History.cs" />
+    <Compile Include="UnitProject\_InformationData.cs" />
+    <Compile Include="Statistics\Measures\_CommonrojectInfo_Statistics.cs" />
+    <Compile Include="Statistics\Measures\_Measures_Statistics.cs" />
+    <Compile Include="Statistics\Measures\_MFixedList_Statistics.cs" />
+    <Compile Include="Statistics\Measures\_MSubheadings_Statistics.cs" />
+    <Compile Include="OBJECT\_ObjectSubheadingsFee.cs" />
+    <Compile Include="OBJECT\_YSSubheadingsFeeInfo.cs" />
+    <Compile Include="OBJECT\_YSSubheadingsFeeList.cs" />
+    <Compile Include="Entries\_SubheadingsInfo.cs" />
+    <Compile Include="Entries\_SubheadingsList.cs" />
+    <Compile Include="Entries\_SubheadingsQuantityUnitInfo.cs" />
+    <Compile Include="Entries\_SubheadingsQuantityUnitList.cs" />
+    <Compile Include="SubSegment\_SubSegments.cs" />
+    <Compile Include="OBJECT\_ParameterSettings.cs" />
+    <Compile Include="OBJECT\_UnitFeeInfo.cs" />
+    <Compile Include="OBJECT\_UnitFeeList.cs" />
+    <Compile Include="Statistics\Measures\_MSubheadings_Statistics_Return.cs" />
+    <Compile Include="Statistics\SubSegment\_FixedList_Statistics.cs" />
+    <Compile Include="Statistics\_Project_Statistics.cs" />
+    <Compile Include="Statistics\SubSegment\_Subheadings_Statistics.cs" />
+    <Compile Include="Statistics\SubSegment\_Subheadings_Statistics_Return.cs" />
+    <Compile Include="Statistics\SubSegment\_SubSegment_Statistics.cs" />
+    <Compile Include="ToolKit.cs" />
+    <Compile Include="UnitProject\_CVariable.cs" />
+    <Compile Include="UnitProject\_InventorySummary.cs" />
+    <Compile Include="Statistics\_Statistics.cs" />
+    <Compile Include="UnitProject\_Metaanalysis.cs" />
+    <Compile Include="UnitProject\_OtherProject.cs" />
+    <Compile Include="UnitProject\_TenderInformation.cs" />
+    <Compile Include="ZBS\ZBS.cs" />
+    <Compile Include="_Constant.cs" />
+    <Compile Include="Application\_UserPriceLibraryList.cs" />
+    <Compile Include="Entries\_IncreaseCosts.cs" />
+    <Compile Include="_Filter.cs" />
+    <Compile Include="计算公式\AreaFormula.cs" />
+    <Compile Include="CEntities\CTEntitiesStandardConversion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntities\CTEntitiesSubheadingsFee.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntities\CTEntitiesTransitPriceLibrary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntity\CEntityStandardConversion.cs" />
+    <Compile Include="CEntity\CEntitySubheadingsFee.cs" />
+    <Compile Include="CEntity\CEntityTransitPriceLibrary.cs" />
+    <Compile Include="计算公式\CircuitFormula.cs" />
+    <Compile Include="计算公式\CircumferenceFormula.cs" />
+    <Compile Include="计算公式\Helper.cs" />
+    <Compile Include="Interface\IAttributes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interface\IUserRule.cs" />
+    <Compile Include="OBJECT\_CBasis.cs" />
+    <Compile Include="Interface\IDataInterface.cs" />
+    <Compile Include="Application\_CENUM.cs" />
+    <Compile Include="Application\_Columns.cs" />
+    <Compile Include="Configuration\_DataObjects.cs" />
+    <Compile Include="Application\_DataTemp.cs" />
+    <Compile Include="Application\_Global.cs" />
+    <Compile Include="Application\_Application.cs" />
+    <Compile Include="Application\_GlobalData.cs" />
+    <Compile Include="Application\_UserPriceLibrary.cs" />
+    <Compile Include="Application\_Prompt.cs" />
+    <Compile Include="CEntities\CTEntitiesLibraryUserPrice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntity\CEntityLibraryUserPrice.cs" />
+    <Compile Include="CEntity\CEntityQuantityUnit.cs" />
+    <Compile Include="CEntities\CTEntitiesTreelist.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntity\CEntityProjects.cs" />
+    <Compile Include="CEntity\CEntityTreelist.cs" />
+    <Compile Include="CEntities\CTEntitiesProjects.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CEntities\CTEntitiesQuantityUnit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CFiles.cs" />
+    <Compile Include="CommonData.cs" />
+    <Compile Include="Interface\IDataface.cs" />
+    <Compile Include="OBJECT\CBaseData.cs" />
+    <Compile Include="CTreeData.cs" />
+    <Compile Include="OBJECT\_Files.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="计算公式\VolumeFormula.cs" />
+    <Compile Include="_Common.cs" />
+    <Compile Include="库\_LibAction.cs" />
+    <Compile Include="库\_Library.cs" />
+    <Compile Include="库\图集库\CEntities\CEntity图集做法定额表.cs" />
+    <Compile Include="库\图集库\CEntities\CEntity图集内容表.cs" />
+    <Compile Include="库\图集库\CEntities\CEntity图集索引表.cs" />
+    <Compile Include="库\图集库\CEntities\CEntity图集表.cs" />
+    <Compile Include="库\图集库\CTEntity\CTEntities图集做法定额表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\图集库\CTEntity\CTEntities图集内容表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\图集库\CTEntity\CTEntities图集索引表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\图集库\CTEntity\CTEntities图集表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CEntities\CEntity关联信息表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity加密系数表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity取费表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity大材设置表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity子目取费表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity定额属性表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity定额换算表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity定额索引表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity定额表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity材机索引表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity材机表.cs" />
+    <Compile Include="库\定额库\CEntities\CEntity配合比表.cs" />
+    <Compile Include="库\定额库\CTEntity\CTEntities关联信息表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities加密系数表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities取费表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities大材设置表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities子目取费表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities定额属性表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities定额换算表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities定额索引表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities定额表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities材机索引表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities材机表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\定额库\CTEntity\CTEntities配合比表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\建筑清单库\CEntities\CEntity指引内容表.cs" />
+    <Compile Include="库\建筑清单库\CEntities\CEntity清单特征定额表.cs" />
+    <Compile Include="库\建筑清单库\CEntities\CEntity清单特征表.cs" />
+    <Compile Include="库\建筑清单库\CEntities\CEntity清单索引表.cs" />
+    <Compile Include="库\建筑清单库\CEntities\CEntity清单表.cs" />
+    <Compile Include="库\建筑清单库\CTEntity\CTEntities指引内容表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\建筑清单库\CTEntity\CTEntities清单特征定额表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\建筑清单库\CTEntity\CTEntities清单特征表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\建筑清单库\CTEntity\CTEntities清单索引表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="库\建筑清单库\CTEntity\CTEntities清单表.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\_HistoryCache.cs" />
+    <Compile Include="CEntity\CEntityGCXXErrData.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Configuration\_ColumnColor.cs" />
+    <Compile Include="DataSetHelper.cs" />
+    <Compile Include="Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Debug.Designer.cs">
+      <DependentUpon>Debug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Distinct\MergerSummary.cs" />
+    <Compile Include="Entries\_CopyList.cs" />
+    <Compile Include="Information\_InformationTable.cs" />
+    <Compile Include="Information\_UnInformation.cs" />
+    <Compile Include="Interface\ActionAttribute.cs" />
+    <Compile Include="Interface\ICopy.cs" />
+    <Compile Include="Interface\ModifyAttribute.cs" />
+    <Compile Include="LogContent.cs" />
+    <Compile Include="OBJECTS\Data\_BiddingInfoSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_InformationPriceLibrarySource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_RepairQuantitySource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_UnitFeeSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_IncreaseCostsSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_InfomationSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_MeasuresSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_MetaanalysisSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_ObjectSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_OtherProjectSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_ProjSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_PSubheadingsFeeSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_QuantitySource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_StandardConversionSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_StructSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_SubheadingsFeeSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_SubSegmentsSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_UserPriceLibrarySource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_VariableSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_YTLBSummarySource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_ProjMetaanalysisSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Data\_TenderInfoSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OBJECTS\Entity\_Entity_IncreaseCosts.cs" />
+    <Compile Include="OBJECTS\Entity\_Entity_OtherProject.cs" />
+    <Compile Include="OBJECTS\Entity\_Entity_PSubFree.cs" />
+    <Compile Include="OBJECTS\Entity\_Entity_QuantityUnit.cs" />
+    <Compile Include="OBJECTS\Entity\_Entity_StandardConversion.cs">
+    </Compile>
+    <Compile Include="OBJECTS\Entity\_Entity_SubFree.cs" />
+    <Compile Include="OBJECTS\Entity\_Entity_SubInfo.cs" />
+    <Compile Include="OBJECTS\Entity\_Entity_UnitFree.cs" />
+    <Compile Include="OBJECTS\Entity\_Entity_YTLBSummary.cs" />
+    <Compile Include="OBJECTS\Implementation\_ProjStatistics.cs" />
+    <Compile Include="OBJECTS\Implementation\_Un_Attr.cs" />
+    <Compile Include="OBJECTS\Implementation\_EnMeasures.cs" />
+    <Compile Include="OBJECTS\Interface\IDataSerializable.cs" />
+    <Compile Include="OBJECTS\Interface\IStateControl.cs" />
+    <Compile Include="OBJECTS\Property\_Pro_Property.cs" />
+    <Compile Include="OBJECTS\Property\_Un_Property.cs" />
+    <Compile Include="OBJECTS\Property\_En_Property.cs" />
+    <Compile Include="OBJECTS\Implementation\_UnMeasures.cs" />
+    <Compile Include="OBJECTS\_AppDataTemp.cs" />
+    <Compile Include="OBJECTS\_CModfitingObject.cs" />
+    <Compile Include="OBJECTS\_FileHeader.cs" />
+    <Compile Include="OBJECTS\_SaveInfo.cs" />
+    <Compile Include="OBJECTS\_SaveInfoList.cs" />
+    <Compile Include="OBJECTS\_Sign.cs" />
+    <Compile Include="OBJECTS\_StatusInfo.cs" />
+    <Compile Include="OBJECTS\_Temporary.cs" />
+    <Compile Include="Report\ContentEditor.cs" />
+    <Compile Include="Report\ContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ContentForm.Designer.cs">
+      <DependentUpon>ContentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ExplainReport.cs" />
+    <Compile Include="Report\FieldReport.cs" />
+    <Compile Include="Report\FileNameConverter.cs" />
+    <Compile Include="Report\NodeReport.cs" />
+    <Compile Include="Report\PageReport.cs" />
+    <Compile Include="Report\RowReport.cs" />
+    <Compile Include="Report\TableReport.cs" />
+    <Compile Include="Report\_ObjectReport.cs" />
+    <Compile Include="Statistics\TemporaryCalculate.cs" />
+    <Compile Include="_ConvertUnit.cs" />
+    <Compile Include="_SubBarInfo.cs" />
+    <None Include="清单计价通用类设计.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSScriptControl">
+      <Guid>{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Debug.resx">
+      <DependentUpon>Debug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ContentForm.resx">
+      <DependentUpon>ContentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Files\" />
+    <Folder Include="Statistics\OtherProject\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

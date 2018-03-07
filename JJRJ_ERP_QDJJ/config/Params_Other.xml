@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DocumentElement>
+	<Params_Other>
+		<Code>QTXMHJ</Code>
+		<Name>其他项目</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>QTXMCJHJ</Code>
+		<Name>其他项目差价合价汇总</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>QTXMJSCJHJ</Code>
+		<Name>其他项目结算差价合计</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>QTXMRGCJHJ</Code>
+		<Name>其他项目人工费调增差价合计</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>ZLJE</Code>
+		<Name>暂列金额</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>SJBGCJ</Code>
+		<Name>设计变更及材料（主材）差价</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>ZYGCZGJ</Code>
+		<Name>专业工程暂估价</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>ZCSBZGJ</Code>
+		<Name>主材设备暂估价</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>LXFBGCE</Code>
+		<Name>另行分包的专业工程金额</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>JRG</Code>
+		<Name>计日工</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>JRGRG</Code>
+		<Name>人工</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+
+	<Params_Other>
+		<Code>JRGRG</Code>
+		<Name>人工</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>JRGCL</Code>
+		<Name>材料</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>JRGJX</Code>
+		<Name>机械</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>ZCBFWF</Code>
+		<Name>总承包服务费</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>FBGLFWF</Code>
+		<Name>发包人发包专业工程管理服务费</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>FBRBGF</Code>
+		<Name>发包人供应材料、设备保管费</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+	<Params_Other>
+		<Code>FSPTJJJ</Code>
+		<Name>副食品调节基金</Name>
+		<Value></Value>
+		<Type>系统</Type>
+		<remark />
+	</Params_Other>
+</DocumentElement>

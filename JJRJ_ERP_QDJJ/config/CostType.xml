@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<!-- 此数据集和用来指定默认的属性列表 -->
+<DocumentElement>
+  <CostType>
+    <Code></Code>
+    <Name></Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>ZJFDJ</Code>
+    <Name>直接费单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>RGFDJ</Code>
+    <Name>人工费单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>CLFDJ</Code>
+    <Name>材料费单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>JXFDJ</Code>
+    <Name>机械费单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>ZCFDJ</Code>
+    <Name>主材费单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>SBFDJ</Code>
+    <Name>设备费单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>GLFDJ</Code>
+    <Name>管理费单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>FXDJ</Code>
+    <Name>风险单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>LRDJ</Code>
+    <Name>利润单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>GFDJ</Code>
+    <Name>规费单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>SJDJ</Code>
+    <Name>税金单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+  <CostType>
+    <Code>ZMDJ</Code>
+    <Name>子目单价</Name>
+    <Value></Value>
+    <Type>系统</Type>
+    <remark />
+  </CostType>
+</DocumentElement>

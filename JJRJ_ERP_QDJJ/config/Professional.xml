@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<!-- 此数据集为工程专业库 -->
+<DocumentElement>
+
+  <!-- 工程类别 -->
+  <!-- 园林定额价目表 -->
+  <Professional>
+    <Name>【园林绿化专业】</Name>
+    <typeName>园林定额价目表</typeName>
+  </Professional>
+  <!-- 绿化定额价目表 -->
+  <Professional>
+    <Name>【园林绿化专业】</Name>
+    <typeName>绿化定额价目表</typeName>
+  </Professional>
+  <!-- 市政定额价目表 -->
+  <Professional>
+    <Name>【市政建筑安装专业】</Name>
+    <typeName>市政定额价目表</typeName>
+  </Professional>
+  <Professional>
+    <Name>【市政建筑专业】</Name>
+    <typeName>市政定额价目表</typeName>
+  </Professional>
+  <Professional>
+    <Name>【市政安装专业】</Name>
+    <typeName>市政定额价目表</typeName>
+  </Professional>
+  <!-- 建筑装饰定额价目表 -->
+  <Professional>
+    <Name>【建筑装饰专业】</Name>
+    <typeName>建筑装饰定额价目表</typeName>
+  </Professional>
+  <Professional>
+    <Name>【一般土建专业】</Name>
+    <typeName>建筑装饰定额价目表</typeName>
+  </Professional>
+  <Professional>
+    <Name>【装饰装修专业】</Name>
+    <typeName>建筑装饰定额价目表</typeName>
+  </Professional>
+  <Professional>
+    <Name>【人工土石方专业】</Name>
+    <typeName>建筑装饰定额价目表</typeName>
+  </Professional>
+  <Professional>
+    <Name>【机械土石方专业】</Name>
+    <typeName>建筑装饰定额价目表</typeName>
+  </Professional>
+  <Professional>
+    <Name>【桩基专业】</Name>
+    <typeName>建筑装饰定额价目表</typeName>
+  </Professional>
+  <!-- 安装额价目表 -->
+  <Professional>
+    <Name>【安装专业】</Name>
+    <typeName>安装定额价目表</typeName>
+  </Professional>
+  
+  
+  <!-- 专业类别 -->
+
+  
+  <Professional>
+    <Name>【电气设备安装工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【炉窑砌筑工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【机械设备安装工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【热力设备安装工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【静置设备与工艺金属结构制作安装】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【工业管道工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【消防设备安装】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【给排水、采暖、燃气工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【通风、空调工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【自动化控制仪表安装工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【建筑智能化系统设备安装】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【长距离输送管道工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+  <Professional>
+    <Name>【刷油、防腐蚀、绝热工程】</Name>
+    <typeName>安装专业</typeName>
+  </Professional>
+</DocumentElement>

@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <TreeList>
+	<!-- 根的节点 -->
+    <KeyFieldName>0</KeyFieldName>
+    <ParentFieldName>-1</ParentFieldName>
+    <NodeName>清单计价</NodeName>
+    <remark />
+  </TreeList>
+  <TreeList>
+    <KeyFieldName>1</KeyFieldName>
+    <ParentFieldName>-1</ParentFieldName>
+    <NodeName>定额计价</NodeName>
+    <remark />
+  </TreeList>
+</DocumentElement>

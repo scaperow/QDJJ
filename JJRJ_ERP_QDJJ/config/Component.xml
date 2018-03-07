@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<!-- 此数据集用于库文件的对应 -->
+<DocumentElement>
+  <Component>
+    <ParentID>0</ParentID>
+    <Name>基础构件</Name>
+    <Type>基础构件</Type>
+    <ImageMember>0</ImageMember>
+    <Remark></Remark>
+  </Component>
+  <Component>
+    <ParentID>0</ParentID>
+    <Name>柱</Name>
+    <Type>柱</Type>
+    <ImageMember>0</ImageMember>
+    <Remark></Remark>
+  </Component>
+  <Component>
+    <ParentID>0</ParentID>
+    <Name>墙</Name>
+    <Type>墙</Type>
+    <ImageMember>0</ImageMember>
+    <Remark></Remark>
+  </Component>
+  <Component>
+    <ParentID>0</ParentID>
+    <Name>板</Name>
+    <Type>板</Type>
+    <ImageMember>0</ImageMember>
+    <Remark></Remark>
+  </Component>
+  <Component>
+    <ParentID>0</ParentID>
+    <Name>基础</Name>
+    <Type>基础</Type>
+    <ImageMember>0</ImageMember>
+    <Remark></Remark>
+  </Component>
+  <Component>
+    <ParentID>0</ParentID>
+    <Name>楼梯</Name>
+    <ImageMember>0</ImageMember>
+    <Remark></Remark>
+  </Component>
+  <Component>
+    <ParentID>0</ParentID>
+    <Name>其他</Name>
+    <Type>其他</Type>
+    <ImageMember>0</ImageMember>
+    <Remark></Remark>
+  </Component>
+</DocumentElement>

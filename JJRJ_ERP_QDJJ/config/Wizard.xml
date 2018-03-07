@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 此数据集和用来加载功能列表的选项 -->
+<DocumentElement>
+  <Wizard>
+    <KeyFieldName>1</KeyFieldName>
+    <ParentFieldName>-1</ParentFieldName>
+    <NodeName>清单计价</NodeName>
+    <ImageIndex>1</ImageIndex>
+    <remark />
+  </Wizard>
+  <Wizard>
+    <KeyFieldName>2</KeyFieldName>
+    <ParentFieldName>-1</ParentFieldName>
+    <NodeName>定额计价</NodeName>
+    <ImageIndex>2</ImageIndex>
+    <remark />
+  </Wizard>
+  <Wizard>
+    <KeyFieldName>3</KeyFieldName>
+    <ParentFieldName>-1</ParentFieldName>
+    <NodeName>审计审核</NodeName>
+    <ImageIndex>3</ImageIndex>
+    <remark />
+  </Wizard>
+  <Wizard>
+    <KeyFieldName>4</KeyFieldName>
+    <ParentFieldName>-1</ParentFieldName>
+    <NodeName>进度预算</NodeName>
+    <ImageIndex>4</ImageIndex>
+    <remark />
+  </Wizard>
+	  <Wizard>
+    <KeyFieldName>5</KeyFieldName>
+    <ParentFieldName>-1</ParentFieldName>
+    <NodeName>工程结算</NodeName>
+    <ImageIndex>5</ImageIndex>
+    <remark />
+  </Wizard>
+</DocumentElement>

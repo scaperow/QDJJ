@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+
+	<QReport>
+		<Text>表一：工程量清单</Text>
+		<Value>工程量清单</Value>
+		<Report></Report>
+	</QReport>
+	<QReport>
+		<Text>表二：总说明</Text>
+		<Value>清单总说明</Value>
+		<Report></Report>
+	</QReport>
+	
+	<QReport>
+		<Text>表三：分部分项工程量清单</Text>
+		<Value>分部分项工程量清单</Value>
+		<Report></Report>
+	</QReport>
+	
+	<QReport>
+		<Text>表四：措施项目清单</Text>
+		<Value>措施项目清单</Value>
+		<Report></Report>
+	</QReport>
+	
+	<QReport>
+		<Text>表五：其他项目清单</Text>
+		<Value>其他项目清单</Value>
+		<Report></Report>
+	</QReport>
+	<QReport>
+		<Text>表六：规费、税金项目清单</Text>
+		<Value>规费税金项目清单</Value>
+		<Report></Report>
+	</QReport>
+	
+	<QReport>
+		<Text>表七：暂列金额明细表</Text>
+		<Value>暂列金额明细表</Value>
+		<Report></Report>
+	</QReport>
+	
+	<QReport>
+		<Text>表八：专业工程暂估价明细表</Text>
+		<Value>专业工程暂估价明细表</Value>
+		<Report></Report>
+	</QReport>
+	<QReport>
+		<Text>表九：计日工表</Text>
+		<Value>计日工表</Value>
+		<Report></Report>
+	</QReport>	
+	
+	<QReport>
+		<Text>表十：总承包服务项目表</Text>
+		<Value>总承包服务项目表</Value>
+		<Report></Report>
+	</QReport>
+	<QReport>
+		<Text>表十一：甲供材料、设备数量及单价明细表</Text>
+		<Value>甲供材料设备数量及单价明细表</Value>
+		<Report></Report>
+	</QReport>
+	
+	<QReport>
+		<Text>表十二：材料、设备暂估单价明细表</Text>
+		<Value>材料设备暂估单价明细表</Value>
+		<Report></Report>
+	</QReport>
+</DocumentElement>

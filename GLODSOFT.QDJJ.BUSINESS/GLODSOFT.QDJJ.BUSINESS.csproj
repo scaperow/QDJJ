@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C29BBFAD-A884-4711-A652-09B2C9B90CEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GLODSOFT.QDJJ.BUSINESS</RootNamespace>
+    <AssemblyName>GLODSOFT.QDJJ.BUSINESS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\DevExpress.Data.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v9.3.dll</HintPath>
+    </Reference>
+    <Reference Include="GOLDSOFT.SERVICES.IServicesObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GOLDSOFT.SERVICES.IServicesObject.dll</HintPath>
+    </Reference>
+    <Reference Include="GSoft.Communications, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="JJSOFT.LIVING, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\JJSOFT.LIVING.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QD_API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\QD_API.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZiboSoft.Commons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZiboSoft.Commons.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APP.cs" />
+    <Compile Include="Calculator.cs" />
+    <Compile Include="Client\GoldSoftClient.cs" />
+    <Compile Include="Client\_ClientResult.cs" />
+    <Compile Include="Client\_GlodSoftDiscern.cs" />
+    <Compile Include="Client\_GlodSoftNetWork.cs" />
+    <Compile Include="CustomBAL.cs" />
+    <Compile Include="Distinct\MergerSummary.cs" />
+    <Compile Include="Entire\_InformationPriceLibrary.cs" />
+    <Compile Include="Entire\_RepairQuantityUnit.cs" />
+    <Compile Include="Entire\_UserPriceLibrary.cs" />
+    <Compile Include="GCXXErrDataBLL.cs" />
+    <Compile Include="ImportExport\DataSet_Excel.cs" />
+    <Compile Include="Objects\_BusContainer.cs" />
+    <Compile Include="Objects\_Business.cs" />
+    <Compile Include="Objects\_BusNotContainer.cs" />
+    <Compile Include="Objects\_En_Business.cs" />
+    <Compile Include="Objects\_Export.cs" />
+    <Compile Include="Objects\_ImportXML.cs" />
+    <Compile Include="Objects\_Operaty.cs" />
+    <Compile Include="Objects\_Pr_Business.cs" />
+    <Compile Include="Objects\_Pr_BusinessEx.cs" />
+    <Compile Include="Objects\_Un_Business.cs" />
+    <Compile Include="Objects\_WorkFlows.cs" />
+    <Compile Include="ProjectAdjust.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\_ProjectsReport.cs" />
+    <Compile Include="Report\_Report.cs" />
+    <Compile Include="Report\_UnitProjectReport.cs" />
+    <Compile Include="Statistics\TemporaryCalculate.cs" />
+    <Compile Include="Statistics\_FixedList_Statistics.cs" />
+    <Compile Include="Statistics\_MCommonProj_Statistics.cs" />
+    <Compile Include="Statistics\_Measures_Statistics.cs" />
+    <Compile Include="Statistics\_OtherProject_Statistics.cs" />
+    <Compile Include="Statistics\_Project_Statistics.cs" />
+    <Compile Include="Statistics\_ResultSubheadings_Statictics.cs" />
+    <Compile Include="Statistics\_Statistics.cs" />
+    <Compile Include="Statistics\_Subheadings_Statistics.cs" />
+    <Compile Include="Statistics\_SubSegment_Statistics.cs" />
+    <Compile Include="WebServiceHelper.cs" />
+    <Compile Include="_HeaderFileInfo.cs" />
+    <Compile Include="_Method.cs" />
+    <Compile Include="_Modify_Method.cs" />
+    <Compile Include="_QuantityUnitBus.cs" />
+    <Compile Include="分部分项\_Methods_AutomatedQuotation.cs" />
+    <Compile Include="分部分项\_Methods_IncreaseInfo.cs" />
+    <Compile Include="分部分项\_Methods_Infomation.cs" />
+    <Compile Include="分部分项\_Methods_StandardConversion.cs" />
+    <Compile Include="分部分项\_Methods_YTLBSummary.cs" />
+    <Compile Include="分部分项\_Method_IncreaseCosts.cs" />
+    <Compile Include="分部分项\_Methods.cs" />
+    <Compile Include="分部分项\_Methods_Fixed.cs" />
+    <Compile Include="分部分项\_Methods_ParamsSeting.cs" />
+    <Compile Include="分部分项\_Methods_Pro.cs" />
+    <Compile Include="分部分项\_Methods_Quantity.cs" />
+    <Compile Include="分部分项\_Methods_Subheadings.cs" />
+    <Compile Include="分部分项\_Method_Chapt.cs" />
+    <Compile Include="分部分项\_Method_Fest.cs" />
+    <Compile Include="分部分项\_Method_Metaanalysis.cs" />
+    <Compile Include="分部分项\_Method_OtherProject.cs" />
+    <Compile Include="分部分项\_Method_Sub.cs" />
+    <Compile Include="分部分项\_Method_Sub_ImportExcel.cs" />
+    <Compile Include="措施项目\_Motheds_CommonProj.cs" />
+    <Compile Include="措施项目\_Mothods_MFixed.cs" />
+    <Compile Include="措施项目\_Mothods_MSubheadings.cs" />
+    <Compile Include="措施项目\_Mothod_Measures.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="应用程序业务关系图.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Commons\GOLDSOFT.QDJJ.COMMONS.csproj">
+      <Project>{277E16F1-C607-49E4-BE7E-E578669C2DFE}</Project>
+      <Name>GOLDSOFT.QDJJ.COMMONS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GOLDSOFT.QDJJ.DATA\GOLDSOFT.QDJJ.DATA.csproj">
+      <Project>{80D88B3A-D915-4AD5-A92B-B7E60448C09E}</Project>
+      <Name>GOLDSOFT.QDJJ.DATA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
